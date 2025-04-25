@@ -29,4 +29,9 @@ export const navLinks = [
     url: "#",
     label: "Contacts",
   },
+  {
+    id: 7,
+    url: "#",
+    label: "Hobbies",
+  },
 ];
