@@ -2,18 +2,18 @@ export const BaseInfo = {
   name: "Franklin",
   position: "Junior Full Stack Web Developer",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit porro numquam ad, vero consequuntur aperiam cumque voluptatum pariatur veniam? Qui facilis est ipsam odio cum!",
+    "I’m Franklin, a Junior Full Stack Web Developer with a passion for turning simple concepts into interactive, efficient web applications. From building intuitive frontends to architecting scalable backends, I’m all about learning, growing, and bringing clean code to life.",
   profilePic: "/images/profile image.jpeg",
 };
 
 export const aboutInfo = {
-  title: "Crafting Web Application with Passion and Precision",
+  title: "Crafting Web Applications with Passion and Precision",
   description:
-    "At webdev warriors, we’re a dedicated team of designers and developers committed to delivering tailored web solutions. With a blend of creativity and technical expertise, we help businesses elevate their online presence and achieve their goals",
-  client: "50+",
-  experience: "3+",
-  project: "200+",
-  website: "100+",
+    "Every line of code I write is driven by the desire to create meaningful, user-centered web solutions. With a solid foundation in full stack development and a hunger to keep evolving, I focus on writing clean, functional code that powers modern web applications. Whether solo or in a team, I strive to craft seamless digital experiences that solve real problems and look great doing it.",
+  client: "10+",
+  experience: "1+",
+  project: "50+",
+  website: "20+",
 };
 
 export const servicesData = [
