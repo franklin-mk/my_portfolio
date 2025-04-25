@@ -11,7 +11,7 @@ export const aboutInfo = {
   description:
     "Every line of code I write is driven by the desire to create meaningful, user-centered web solutions. With a solid foundation in full stack development and a hunger to keep evolving, I focus on writing clean, functional code that powers modern web applications. Whether solo or in a team, I strive to craft seamless digital experiences that solve real problems and look great doing it.",
   client: "10+",
-  experience: "1+",
+  experience: "2+",
   project: "50+",
   website: "20+",
 };
