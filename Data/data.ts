@@ -74,6 +74,11 @@ export const servicesData = [
 export const projectData = [
   {
     id: 1,
+    image: "/images/p10.png",
+    url: "https://mycafe-hub-qog6.onrender.com",
+  },
+  {
+    id: 9,
     image: "/images/p1.png",
     url: "https://agency-opal-eight.vercel.app/",
   },
@@ -161,19 +166,37 @@ export const skillsData = [
     id: 8,
     title: "Python",
     image: "/images/python.svg",
-    percent: "55%",
+    percent: "30%",
   },
   {
     id: 9,
     title: "Firebase",
     image: "/images/firebase.svg",
-    percent: "75%",
+    percent: "20%",
   },
   {
     id: 10,
-    title: "Vue",
-    image: "/images/vue.svg",
-    percent: "35%",
+    title: "C",
+    image: "/images/c.svg",
+    percent: "43%",
+  },
+  {
+    id: 11,
+    title: "Supabase",
+    image: "/images/supabase.svg",
+    percent: "50%",
+  },
+  {
+    id: 12,
+    title: "SQL",
+    image: "/images/sql.svg",
+    percent: "50%",
+  },
+  {
+    id: 13,
+    title: "Digital Marketing",
+    image: "/images/dm.svg",
+    percent: "30%",
   },
 ];
 

@@ -27,11 +27,12 @@ export const navLinks = [
   {
     id: 6,
     url: "#",
-    label: "Contacts",
+    label: "Hobbies",
   },
   {
     id: 7,
     url: "#",
-    label: "Hobbies",
+    label: "Contacts",
   },
+  
 ];
