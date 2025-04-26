@@ -238,10 +238,10 @@ export const clientReviews = [
 export const blogs = [
   {
     id: 1,
-    title: "Top Web Development Trends to Watch in 2024",
+    title: "Top Web Development Trends to Watch in 2025",
     summary:
       "Explore the key web development trends for 2024 and their impact on your business.",
-    date: "August 18, 2024",
+    date: "April 25, 2025",
     image: "/images/b1.jpg",
   },
   {
@@ -249,7 +249,7 @@ export const blogs = [
     title: "Why Your Business Needs a Custom Web Application",
     summary:
       "Discover why custom web applications are crucial for driving business growth and efficiency.",
-    date: "August 10, 2024",
+    date: "April 10, 2025",
     image: "/images/b2.jpg",
   },
   {
@@ -257,13 +257,24 @@ export const blogs = [
     title: "The Importance of Website Speed Optimization",
     summary:
       "Understand how website speed impacts user experience and learn essential optimization tips.",
-    date: "July 25, 2024",
+    date: "April 25, 2025",
     image: "/images/b3.jpg",
   },
 ];
 
 export const contactData = {
-  phone: "+88(012345 789)",
-  email: "example@gmail.com",
-  address: "Dhaka , Bangladesh",
+  phone: "+254716205591",
+  email: "franklinmuriithi431@gmail.com",
+  address: "Nyeri, Kenya",
+};
+
+export const linksData = {
+  github: "https://github.com/franklin-mk",
+  youtube:"https://www.youtube.com/@m.franklin",
+  whatsapp: "https://wa.me/254716205591",
+  x: "https://x.com/mfrank_lin",
+  linkedin:"https://www.linkedin.com/in/franklinmuriithi/",
+  snapchat:"https://www.snapchat.com/add/mfrank.lin?share_id=lcSqDpEx-mk&locale=en-GB",
+  tiktok:"https://www.tiktok.com/@m.frank_lin",
+  instagram:"https://www.instagram.com/_.jus.not.ur_frank/?__pwa=1",
 };
