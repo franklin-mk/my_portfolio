@@ -11,19 +11,33 @@ const Hero = () => {
                 {/* CONTENT */}
                 <div>
                     {/* NAME */}
-                    <h1 className='text-2xl md:text-3xl lg:text-4xl mb-5 text-gray-300 font-semibold'>
+                    <h1 
+                        data-aos="fade-left" 
+                        className='text-2xl md:text-3xl lg:text-4xl mb-5 text-gray-300 font-semibold'
+                    >
                         I am {BaseInfo.name}
                     </h1>
                     {/* TITLE POSTION */}
-                    <h1 className='text-bg text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold md:leading=[3rem] lg:leading=[3.5rem] xl:leading-[4rem] text-white'>
+                    <h1 
+                        data-aos="fade-right"
+                        data-aos-delay="100"
+                        className='text-bg text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold md:leading=[3rem] lg:leading=[3.5rem] xl:leading-[4rem] text-white'>
                         {BaseInfo.position}
                     </h1>
                     {/* DESCRIPTION */}
-                    <p className='mt-6 text-sm md:text-base text-white text-opacity-60'>
+                    <p 
+                        className='mt-6 text-sm md:text-base text-white text-opacity-60'
+                        data-aos="fade-left"
+                        data-aos-delay="200"
+                    >
                         {BaseInfo.description}
                     </p>
                     {/* DOWNLOAD CV BUTTON */}
-                    <button className='md:px-8 md:py-2.5 px-6 py-1.5 text-white font-semibold text-sm md:text-lg transition-all duration-200 rounded-lg mt-8 bg-blue-700 hover:bg-red-950 flex items-center space-x-2'>
+                    <button 
+                        className='md:px-8 md:py-2.5 px-6 py-1.5 text-white font-semibold text-sm md:text-lg transition-all duration-200 rounded-lg mt-8 bg-blue-700 hover:bg-red-950 flex items-center space-x-2'
+                         data-aos="zoom-in"
+                        data-aos-delay="300"
+                    >
                         <span>
                             Download CV
                         </span>
@@ -32,8 +46,17 @@ const Hero = () => {
                 </div>
 
                 {/* IMAGE */}
-                <div className='mx-auto hidden lg:block rounded-[3rem] border-[3.5px] border-blue-950 overflow-hidden'>
-                    <Image src={BaseInfo.profilePic} alt={BaseInfo.name} width={500} height={500}/>
+                <div 
+                    className='mx-auto hidden lg:block rounded-[3rem] border-[3.5px] border-blue-950 overflow-x-hidden'
+                    data-aos="zoom-in"
+                    data-aos-delay="400"
+                >
+                    <Image 
+                        src={BaseInfo.profilePic} 
+                        alt={BaseInfo.name} 
+                        width={500} 
+                        height={500}
+                    />
                 </div>
             </div>
         </div>

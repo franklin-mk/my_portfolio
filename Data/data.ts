@@ -278,3 +278,97 @@ export const linksData = {
   tiktok:"https://www.tiktok.com/@m.frank_lin",
   instagram:"https://www.instagram.com/_.jus.not.ur_frank/?__pwa=1",
 };
+
+
+
+
+export const educationData = [
+  {
+    id: 1,
+    institution: "Kagumo High School",
+    program: "High School",
+    duration: "Jan 2019 - Dec 2022",
+    image: "/images/b2.jpg",
+    keyAchievements: [
+      "Grade: A-",
+      "Activities: Volleyball, Clubs",
+      "Developed strong foundation in mathematics and sciences",
+      "Participated in extracurricular activities and leadership roles",
+    ],
+  },
+  {
+    id: 2,
+    institution: "DirectEd Development",
+    image: "/images/b2.jpg",
+    program: "Full-stack Web Development Bootcamp",
+    duration: "Apri 2024 - Aug 2024",
+    keyAchievements: [
+      "Grade: 2nd Runners-up",
+      "Focus: Front-End and Back-End Web Development",
+      "Proficiency in 9+ technical skills",
+      "Completed comprehensive full-stack curriculum",
+    ],
+  },
+  {
+    id: 3,
+    image: "/images/b2.jpg",
+    institution: "Dedan Kimathi University of Technology",
+    program: "Bachelor of Science in Computer Science",
+    duration: "July 2024 - Present",
+    keyAchievements: [
+      "Pursuing specialization in Cybersecurity",
+      "Active participation in tech communities and clubs",
+      "Consistent academic performance",
+      "Focused on mastering software development and cybersecurity principles",
+    ],
+  },
+];
+
+
+export const hobbiesData = [
+  {
+    id: 1,
+    hobby: "Coding",
+    image: "/images/b3.jpg",
+    description: [
+      "Passionate about building web applications and learning new technologies.",
+      "Enjoy solving problems through code and creating efficient solutions.",
+      "Love staying updated with the latest tech trends and tools.",
+      "Currently improving skills in Full-Stack Development and Cybersecurity.",
+    ],
+  },
+  {
+    id: 2,
+    hobby: "Making Pancakes",
+    image: "/images/b3.jpg",
+    description: [
+      "Enjoy experimenting with different pancake recipes and toppings.",
+      "Find cooking relaxing and a fun way to express creativity.",
+      "Love sharing homemade pancakes with friends and family.",
+      "Always trying new techniques to make the fluffiest pancakes.",
+    ],
+  },
+  {
+    id: 3,
+    hobby: "Photography",
+    image: "/images/b3.jpg",
+    description: [
+      "Enjoy capturing moments, landscapes, and portraits.",
+      "Focus on natural lighting and real emotions in photos.",
+      "Love exploring new places to find great photography spots.",
+      "Currently learning more about editing and camera settings.",
+    ],
+  },
+  {
+    id: 4,
+    hobby: "Playing Pool",
+    image: "/images/b3.jpg",
+    description: [
+      "Love playing pool for fun and improving aiming and strategies.",
+      "Enjoy competing with friends and learning new techniques.",
+      "Focus on accuracy, angles, and shot planning.",
+      "Playing pool helps with concentration and strategic thinking.",
+    ],
+  },
+];
+

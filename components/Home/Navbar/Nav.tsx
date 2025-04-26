@@ -53,11 +53,14 @@ const Nav = ( { openNav }:Props ) => {
                 )
                 })}
                 </div>
-                {/* BUTTONS */}
+                {/* BUTTON to scroll to contact me */}
                 <div className='flex items-center space-x-4'>
-                    <button className='md:px-10 md:py-3 px-8 py-3 text-blue-800 font-semibold sm:text-base text-sm bg-white hover:bg-gray-200 transition-all duration-200 rounded-lg'>
-                        Contact Me
-                    </button>
+                    <Link href="#contact" >
+                        <button className='md:px-10 md:py-3 px-8 py-3 text-blue-800 font-semibold sm:text-base text-sm bg-white hover:bg-gray-200 transition-all duration-200 rounded-lg'>
+                            Contact Me
+                        </button>
+                    </Link>
+                    
 
                     {/* BURGER MENU */}
                     <HiBars3BottomRight 
