@@ -10,7 +10,7 @@ const Hobbies = () => {
         <SectionHeading>
             Hobbies
         </SectionHeading>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 w-[80%] mx-auto">
           {hobbiesData.map((hobby, i) => {
             return (
               <HobbyCard key={i} hobby={hobby} />
