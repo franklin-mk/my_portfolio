@@ -24,7 +24,7 @@ const EducationCard = ({education}: educationProps) => {
           alt={institution}
           width={300}
           height={300}
-          className='w-full h-[250px] object-cover'
+          className='w-full h-[300px] object-cover'
         />
       </div>
       <div className="p-6 flex flex-col flex-grow">

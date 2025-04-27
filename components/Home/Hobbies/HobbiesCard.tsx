@@ -20,9 +20,9 @@ const HobbyCard = ({hobby}: hobbyProps) => {
         <Image 
           src={image} 
           alt={hobbyName}
-          width={300}
-          height={300}
-          className='w-full h-[200px] object-cover'
+          width={500}
+          height={500}
+          className='w-full h-[400px] object-cover'
         />
       </div>
       <div className="p-6 flex flex-col flex-grow">

@@ -75,16 +75,16 @@ export const servicesData = [
 export const projectData = [
   {
     id: 1,
-    image: "/images/p10.png",
+    image: "/images/projects/cafehub.png",
     url: "https://mycafe-hub-qog6.onrender.com",
   },
   {
-    id: 9,
-    image: "/images/p1.png",
-    url: "https://agency-opal-eight.vercel.app/",
+    id: 2,
+    image: "/images/projects/eventsimplified.png",
+    url: "https://dev.d23xomau6ts39y.amplifyapp.com/dashboard/tasks?event=96a91e24-5aae-498b-8193-ad4612d7fdaa",
   },
   {
-    id: 2,
+    id: 9,
     image: "/images/p2.png",
     url: "https://burger-pearl.vercel.app/",
   },
@@ -289,7 +289,7 @@ export const educationData = [
     institution: "Kagumo High School",
     program: "High School",
     duration: "Jan 2019 - Dec 2022",
-    image: "/images/b2.jpg",
+    image: "/images/education/kagumo.jpeg",
     keyAchievements: [
       "Grade: A-",
       "Activities: Volleyball, Clubs",
@@ -300,7 +300,7 @@ export const educationData = [
   {
     id: 2,
     institution: "DirectEd Development",
-    image: "/images/b2.jpg",
+    image: "/images/education/directed.webp",
     program: "Full-stack Web Development Bootcamp",
     duration: "Apri 2024 - Aug 2024",
     keyAchievements: [
@@ -312,7 +312,7 @@ export const educationData = [
   },
   {
     id: 3,
-    image: "/images/b2.jpg",
+    image: "/images/education/dekut.png",
     institution: "Dedan Kimathi University of Technology",
     program: "Bachelor of Science in Computer Science",
     duration: "July 2024 - Present",
@@ -330,7 +330,7 @@ export const hobbiesData = [
   {
     id: 1,
     hobby: "Coding",
-    image: "/images/b3.jpg",
+    image: "/images/hobbies/coding.jpg",
     description: [
       "Passionate about building web applications and learning new technologies.",
       "Enjoy solving problems through code and creating efficient solutions.",
@@ -341,7 +341,7 @@ export const hobbiesData = [
   {
     id: 2,
     hobby: "Making Pancakes",
-    image: "/images/b3.jpg",
+    image: "/images/hobbies/pancakes.jpg",
     description: [
       "Enjoy experimenting with different pancake recipes and toppings.",
       "Find cooking relaxing and a fun way to express creativity.",
@@ -352,7 +352,7 @@ export const hobbiesData = [
   {
     id: 3,
     hobby: "Photography",
-    image: "/images/b3.jpg",
+    image: "/images/hobbies/photo.jpg",
     description: [
       "Enjoy capturing moments, landscapes, and portraits.",
       "Focus on natural lighting and real emotions in photos.",
@@ -363,7 +363,7 @@ export const hobbiesData = [
   {
     id: 4,
     hobby: "Playing Pool",
-    image: "/images/b3.jpg",
+    image: "/images/hobbies/pool.jpg",
     description: [
       "Love playing pool for fun and improving aiming and strategies.",
       "Enjoy competing with friends and learning new techniques.",
