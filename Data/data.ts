@@ -4,6 +4,7 @@ export const BaseInfo = {
   description:
     "I’m Franklin, a Junior Full Stack Web Developer with a passion for turning simple concepts into interactive, efficient web applications. From building intuitive frontends to architecting scalable backends, I’m all about learning, growing, and bringing clean code to life.",
   profilePic: "/images/profile image.jpeg",
+  cvpdf:"pdf/cv.pdf",
 };
 
 export const aboutInfo = {

@@ -17,7 +17,7 @@ const EducationCard = ({education}: educationProps) => {
   const {institution, program, duration, image, keyAchievements} = education
   
   return (
-    <div className="bg-indigo-950 rounded-lg shadow-md overflow-hidden text-white">
+    <div className="bg-indigo-950 rounded-lg shadow-md overflow-hidden text-white h-full flex flex-col">
       <div className="relative w-full">
         <Image 
           src={image} 
@@ -27,23 +27,22 @@ const EducationCard = ({education}: educationProps) => {
           className='w-full h-[250px] object-cover'
         />
       </div>
-      <div className="p-6">
+      <div className="p-6 flex flex-col flex-grow">
         <div className="flex flex-row items-center gap-2 mb-4">
-          <FaGraduationCap className="text-2xl" />
-          <h3 className="text-xl font-medium mb-3">{institution}</h3>
-          
+          <FaGraduationCap className="text-2xl flex-shrink-0" />
+          <h3 className="text-xl font-medium">{institution}</h3>
         </div>
 
         <p className="text-sm font-bold mb-3">{program}</p>
         
         <div className="flex items-center gap-2 mb-4">
-          <FaCalendarAlt className="text-sm" />
+          <FaCalendarAlt className="text-sm flex-shrink-0" />
           <p className="text-sm">{duration}</p>
         </div>
         
-        <div className="mt-4">
+        <div className="mt-4 flex-grow">
           <div className="flex items-center gap-2 mb-2">
-            <FaTrophy className="text-lg" />
+            <FaTrophy className="text-lg flex-shrink-0" />
             <p className="font-medium">Key Achievements:</p>
           </div>
           <ul className="list-disc pl-7 space-y-1">

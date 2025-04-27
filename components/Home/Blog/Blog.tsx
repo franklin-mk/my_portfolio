@@ -1,4 +1,6 @@
-//Blog.tsx
+//Blog.tsx WITH ANIMATION
+// USE THIS TO ADD THE ANIMATION IN THE EDUCATION SECTION
+// WITHOUT CHANGING THE CARD STYLING
 import SectionHeading from '@/components/Helper/SectionHeading'
 import { blogs } from '@/Data/data'
 import React from 'react'

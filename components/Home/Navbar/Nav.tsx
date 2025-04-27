@@ -1,4 +1,3 @@
-//CHANGE NAVBAR LOGO HERE
 "use client"
 import { navLinks } from '@/constant/constant'
 import Image from 'next/image'
@@ -56,7 +55,7 @@ const Nav = ( { openNav }:Props ) => {
                 {/* BUTTON to scroll to contact me */}
                 <div className='flex items-center space-x-4'>
                     <Link href="#contact" >
-                        <button className='md:px-10 md:py-3 px-8 py-3 text-blue-800 font-semibold sm:text-base text-sm bg-white hover:bg-gray-200 transition-all duration-200 rounded-lg'>
+                        <button className=' md:px-10 md:py-3 px-8 py-3 text-blue-800 font-semibold sm:text-base text-sm bg-white hover:bg-gray-200 transition-all duration-200 rounded-lg'>
                             Contact Me
                         </button>
                     </Link>

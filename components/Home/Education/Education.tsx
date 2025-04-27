@@ -11,11 +11,19 @@ const Education = () => {
             Education
         </SectionHeading>
         <div 
-            className="w-[80%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-20  mx-auto " 
+            className="w-[80%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-20 mx-auto" 
         >
           {educationData.map((education, i) => {
             return (
-                <EducationCard key={i} education={education} />
+                <div 
+                  key={education.id}
+                  data-aos="zoom-in"
+                  data-aos-delay={`${i*150}`}
+                  data-aos-anchor-placement="top-center"
+                  className="h-full"
+                >
+                  <EducationCard education={education} />
+                </div>
             )
           })}
         </div>
@@ -25,4 +33,3 @@ const Education = () => {
 }
 
 export default Education
-//w-[80%] mt-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12 items-center 

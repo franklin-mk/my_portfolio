@@ -10,10 +10,19 @@ const Hobbies = () => {
         <SectionHeading>
             Hobbies
         </SectionHeading>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 w-[80%] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 w-[80%] mx-auto">
           {hobbiesData.map((hobby, i) => {
             return (
-              <HobbyCard key={i} hobby={hobby} />
+              <div 
+                key={hobby.id}
+                data-aos="fade-up"
+                data-aos-delay={`${i*100}`}
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out"
+                className="h-full"
+              >
+                <HobbyCard hobby={hobby} />
+              </div>
             )
           })}
         </div>
@@ -23,4 +32,3 @@ const Hobbies = () => {
 }
 
 export default Hobbies
-//w-[80%] mt-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12 items-center 
