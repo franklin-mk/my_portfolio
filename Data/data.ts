@@ -84,12 +84,12 @@ export const projectData = [
     url: "https://dev.d23xomau6ts39y.amplifyapp.com/dashboard/tasks?event=96a91e24-5aae-498b-8193-ad4612d7fdaa",
   },
   {
-    id: 9,
-    image: "/images/p2.png",
-    url: "https://burger-pearl.vercel.app/",
+    id: 3,
+    image: "/images/projects/lms.png",
+    url: "https://lms1-black.vercel.app",
   },
   {
-    id: 3,
+    id: 9,
     image: "/images/p3.png",
     url: "https://game-ecommerce-yt.vercel.app/",
   },
