@@ -6,7 +6,7 @@ const Reviews = () => {
   return (
     <div className='pt-16 pb-16 bg-[#050715]'>
         <SectionHeading>
-            Client Reviews
+            Client & Team Reviews
         </SectionHeading>
         <div className='w-[90%] sm:w-[80%] mx-auto mt-20'>
             {/* SLIDER */}

@@ -229,7 +229,7 @@ export const clientReviews = [
   {
     name: "Emily Brown",
     review:
-      "Professional, efficient, and highly knowledgeable. Would definitely recommend their services!",
+      "Professional, efficient, and highly knowledgeable. Would definitely recommend his services!",
     rating: 4.9,
     profession: "Creative Director",
     image: "/images/u4.jpg",
