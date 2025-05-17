@@ -93,7 +93,7 @@ export const projectData = [
     image: "/images/projects/blog1.png",
     url: "https://blog-app-b0un.onrender.com",
   },
-  {
+  /* {
     id: 9,
     image: "/images/p4.png",
     url: "https://elearning-yt.vercel.app/",
@@ -117,7 +117,7 @@ export const projectData = [
     id: 8,
     image: "/images/p8.png",
     url: "https://webhost-ten.vercel.app/",
-  },
+  }, */
 ];
 
 export const skillsData = [
