@@ -205,7 +205,7 @@ export const clientReviews = [
   {
     name: "John Doe",
     review:
-      "Exceptional service! The team delivered exactly what we needed on time. Very professional",
+      "Exceptional service! He delivered exactly what we needed on time. Very professional",
     rating: 5,
     profession: "Marketing Manager",
     image: "/images/u1.jpg",
@@ -213,7 +213,7 @@ export const clientReviews = [
   {
     name: "Jane Smith",
     review:
-      "Highly skilled developers who understand the client's vision and execute perfectly.",
+      "Highly skilled developer who understand the client's vision and execute perfectly.",
     rating: 4.8,
     profession: "Business Owner",
     image: "/images/u2.jpg",
