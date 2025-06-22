@@ -53,6 +53,14 @@
             justify-content: center;
             font-size: 48px;
             font-weight: bold;
+            overflow: hidden;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
         }
 
         .name {
@@ -275,14 +283,45 @@
             body {
                 background: white;
                 padding: 0;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
             }
             .resume-container {
                 box-shadow: none;
                 border-radius: 0;
                 max-width: none;
+                width: 100%;
+                height: 100vh;
+                page-break-inside: avoid;
             }
             .download-btn {
-                display: none;
+                display: none !important;
+            }
+            .sidebar {
+                background: linear-gradient(135deg, #2c5aa0 0%, #1e3a6f 100%) !important;
+                color: white !important;
+            }
+            .skill-fill {
+                background: linear-gradient(90deg, #4fc3f7, #29b6f6) !important;
+            }
+            .dot.filled {
+                background: #4fc3f7 !important;
+            }
+            .section-title {
+                color: #2c5aa0 !important;
+                border-bottom: 2px solid #2c5aa0 !important;
+            }
+            .timeline-item::before {
+                background: #2c5aa0 !important;
+            }
+            .timeline-date {
+                color: #2c5aa0 !important;
+            }
+            .certificate-date {
+                color: #2c5aa0 !important;
+            }
+            .certificate-item {
+                border-left: 4px solid #2c5aa0 !important;
             }
         }
 
@@ -307,13 +346,13 @@
 </head>
 <body>
     <button class="download-btn" onclick="downloadPDF()">📄 Download PDF</button>
-    <!-- THE DOWNLOAD FUNCTION DOESNT DOWNLOAD THE RESUME IN THE SAME STYLING AS THE WEB STYLED RESUME  -->
     
     <div class="resume-container">
         <aside class="sidebar">
             <div class="profile-section">
-                <div class="profile-image">FM</div>
-                <!-- replace FM WITH MY ACTUAL IMAGE WHICH IS SAVED AT /public/images/profilepic.jpg -->
+                <div class="profile-image">
+                    <img src="/public/images/profilepic.jpg" alt="Franklin Muriithi" onerror="this.style.display='none'; this.parentNode.innerHTML = 'FM';">
+                </div>
                 <div class="name">Franklin Muriithi</div>
                 <div class="title">Junior Full Stack Web Developer</div>
             </div>
@@ -526,7 +565,7 @@
                     <div class="certificate-name">KCSE</div>
                     <div class="certificate-date">Nov 2023</div>
                     <div style="font-size: 0.85em; color: #666; margin-top: 5px;">
-                        After finishing my primary school education I earned the KCSE certificate
+                        After finishing my high school education I earned the KCSE certificate
                     </div>
                 </div>
                 <div class="certificate-item">
@@ -546,23 +585,31 @@
             </section>
 
             <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #e0e0e0; font-size: 0.85em; color: #666; text-align: center;">
-                I consent to the processing of my personal data for the purpose of recruitmnt to the position to which I am applying.
+                I consent to the processing of my personal data for the purpose of recruitment to the position to which I am applying.
             </div>
         </main>
     </div>
 
     <script>
         function downloadPDF() {
-            // Hide the download button for printing
-            document.querySelector('.download-btn').style.display = 'none';
+            // Create a new window for printing
+            const printWindow = window.open('', '', 'height=600,width=800');
             
-            // Use browser's print functionality
-            window.print();
+            // Get the current document's HTML
+            const currentHTML = document.documentElement.outerHTML;
             
-            // Show the button again after printing
-            setTimeout(() => {
-                document.querySelector('.download-btn').style.display = 'block';
-            }, 1000);
+            // Write the HTML to the new window
+            printWindow.document.write(currentHTML);
+            printWindow.document.close();
+            
+            // Focus on the new window and print
+            printWindow.focus();
+            
+            // Wait for the content to load, then print
+            printWindow.onload = function() {
+                printWindow.print();
+                printWindow.close();
+            };
         }
     </script>
 </body>
