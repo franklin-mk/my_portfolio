@@ -93,6 +93,11 @@ export const projectData = [
     image: "/images/projects/blog1.png",
     url: "https://blog-app-b0un.onrender.com",
   },
+  {
+    id: 5,
+    image: "/images/projects/mpesafigma.png",
+    url: "https://www.figma.com/proto/h7Wb7LD0OaPVFqUAldTeiN/M-PESA-APP-DESIGN?node-id=0-1&t=DN3HSAyOZiowtdwq-1",
+  },
   /* {
     id: 9,
     image: "/images/p4.png",
@@ -195,6 +200,12 @@ export const skillsData = [
   },
   {
     id: 13,
+    title: "UIUX",
+    image: "/images/uiux.svg",
+    percent: "50%",
+  },
+  {
+    id: 14,
     title: "Digital Marketing",
     image: "/images/dm.svg",
     percent: "30%",

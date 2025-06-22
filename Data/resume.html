@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franklin Muriithi - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.5;
+            color: #333;
+            background-color: #f0f2f5;
+            padding: 20px;
+        }
+
+        .resume-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 30px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+        }
+
+        .sidebar {
+            background: linear-gradient(135deg, #2c5aa0 0%, #1e3a6f 100%);
+            color: white;
+            padding: 30px 25px;
+        }
+
+        .profile-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid rgba(255,255,255,0.3);
+            margin: 0 auto 20px;
+            background: #4a90e2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .name {
+            font-size: 1.5em;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .title {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .sidebar-section {
+            margin-bottom: 30px;
+        }
+
+        .sidebar-title {
+            font-size: 1.1em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #e8f4fd;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 0.85em;
+        }
+
+        .contact-icon {
+            width: 20px;
+            margin-right: 12px;
+            text-align: center;
+        }
+
+        .skill-item {
+            margin-bottom: 15px;
+        }
+
+        .skill-name {
+            font-size: 0.85em;
+            margin-bottom: 5px;
+        }
+
+        .skill-bar {
+            width: 100%;
+            height: 6px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .skill-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #4fc3f7, #29b6f6);
+            border-radius: 3px;
+            transition: width 0.3s ease;
+        }
+
+        .language-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 0.85em;
+        }
+
+        .language-dots {
+            display: flex;
+            gap: 3px;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.3);
+        }
+
+        .dot.filled {
+            background: #4fc3f7;
+        }
+
+        .hobby-item {
+            font-size: 0.8em;
+            margin-bottom: 8px;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .hobby-item::before {
+            content: '▪';
+            position: absolute;
+            left: 0;
+            color: #4fc3f7;
+        }
+
+        .main-content {
+            padding: 40px 35px;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section-title {
+            font-size: 1.3em;
+            color: #2c5aa0;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #2c5aa0;
+            position: relative;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .profile-text {
+            color: #555;
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        .timeline-item {
+            margin-bottom: 25px;
+            padding-left: 25px;
+            border-left: 2px solid #e0e0e0;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 5px;
+            width: 10px;
+            height: 10px;
+            background: #2c5aa0;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+        }
+
+        .timeline-title {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .timeline-date {
+            font-size: 0.85em;
+            color: #2c5aa0;
+            font-weight: 500;
+        }
+
+        .timeline-subtitle {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 8px;
+        }
+
+        .timeline-description {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .certificate-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border-left: 4px solid #2c5aa0;
+        }
+
+        .certificate-name {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .certificate-date {
+            font-size: 0.85em;
+            color: #2c5aa0;
+            font-weight: 500;
+        }
+
+        .download-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, #2c5aa0, #1e3a6f);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 0.9em;
+            box-shadow: 0 4px 15px rgba(44, 90, 160, 0.3);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(44, 90, 160, 0.4);
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .resume-container {
+                box-shadow: none;
+                border-radius: 0;
+                max-width: none;
+            }
+            .download-btn {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .resume-container {
+                grid-template-columns: 1fr;
+                margin: 10px;
+            }
+            .sidebar {
+                order: 2;
+            }
+            .main-content {
+                order: 1;
+                padding: 30px 20px;
+            }
+            .timeline-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="download-btn" onclick="downloadPDF()">📄 Download PDF</button>
+    <!-- THE DOWNLOAD FUNCTION DOESNT DOWNLOAD THE RESUME IN THE SAME STYLING AS THE WEB STYLED RESUME  -->
+    
+    <div class="resume-container">
+        <aside class="sidebar">
+            <div class="profile-section">
+                <div class="profile-image">FM</div>
+                <!-- replace FM WITH MY ACTUAL IMAGE WHICH IS SAVED AT /public/images/profilepic.jpg -->
+                <div class="name">Franklin Muriithi</div>
+                <div class="title">Junior Full Stack Web Developer</div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Personal Details</h3>
+                <div class="contact-item">
+                    <span class="contact-icon">📧</span>
+                    <span>franklinmuriithi431@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📱</span>
+                    <span>+254716205561</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📍</span>
+                    <span>P.O Box 284-10101 Karatina<br>10101 Nyeri Town</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📅</span>
+                    <span>April 3, 2005</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">👤</span>
+                    <span>Male</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">🌍</span>
+                    <span>Kenyan</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">🌐</span>
+                    <span>amfranklin.vercel.app</span>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Skills</h3>
+                <div class="skill-item">
+                    <div class="skill-name">Backend Development</div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">JavaScript</div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">HTML</div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">CSS</div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Leadership</div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">React</div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Innovative Thinking</div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 88%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Node.js</div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 82%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Team Collaboration</div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Problem Solving</div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Database Management</div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Frontend Development</div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 88%"></div></div>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Languages</h3>
+                <div class="language-item">
+                    <span>English</span>
+                    <div class="language-dots">
+                        <div class="dot filled"></div>
+                        <div class="dot filled"></div>
+                        <div class="dot filled"></div>
+                        <div class="dot filled"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+                <div class="language-item">
+                    <span>Swahili</span>
+                    <div class="language-dots">
+                        <div class="dot filled"></div>
+                        <div class="dot filled"></div>
+                        <div class="dot filled"></div>
+                        <div class="dot filled"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+                <div class="language-item">
+                    <span>German</span>
+                    <div class="language-dots">
+                        <div class="dot filled"></div>
+                        <div class="dot filled"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+                <div class="language-item">
+                    <span>Kikuyu</span>
+                    <div class="language-dots">
+                        <div class="dot filled"></div>
+                        <div class="dot filled"></div>
+                        <div class="dot filled"></div>
+                        <div class="dot filled"></div>
+                        <div class="dot filled"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Hobbies</h3>
+                <div class="hobby-item">Coding</div>
+                <div class="hobby-item">Learning new programming languages</div>
+                <div class="hobby-item">Gaming</div>
+                <div class="hobby-item">Building personal projects</div>
+                <div class="hobby-item">Playing volleyball</div>
+                <div class="hobby-item">Photography</div>
+                <div class="hobby-item">Playing Pool</div>
+                <div class="hobby-item">Making Pancakes</div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section class="section">
+                <h2 class="section-title">Profile</h2>
+                <p class="profile-text">
+                    As a passionate and driven Junior Full Stack Developer, I possess a keen interest in developing innovative web solutions that enhance user experience and operational efficiency. My background in computer science, coupled with hands-on experience in various web technologies, has equipped me with the skills necessary to contribute effectively to dynamic development environments where I can apply my problem-solving abilities and technical knowledge to deliver high-quality solutions.
+                </p>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Education</h2>
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div>
+                            <div class="timeline-title">High School</div>
+                            <div class="timeline-subtitle">Kagumo High School, Nyeri</div>
+                        </div>
+                        <div class="timeline-date">Jan 2020 - Nov 2023</div>
+                    </div>
+                    <div class="timeline-description">
+                        <strong>Leadership Skills:</strong> Volleyball<br>
+                        <strong>Team Management:</strong> Innovative
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div>
+                            <div class="timeline-title">Bachelor of Science in Computer Science</div>
+                            <div class="timeline-subtitle">Dedan Kimathi University of Technology, Nyeri</div>
+                        </div>
+                        <div class="timeline-date">Jul 2024 - Present</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Employment</h2>
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div>
+                            <div class="timeline-title">Junior Full Stack Developer</div>
+                            <div class="timeline-subtitle">DirectED Development, Nairobi</div>
+                        </div>
+                        <div class="timeline-date">Jan 2024 - Jan 2025</div>
+                    </div>
+                    <div class="timeline-description">
+                        • Developed responsive web applications using React.js and Node.js<br>
+                        • Collaborated with design teams to implement user-friendly interfaces<br>
+                        • Optimized application performance and implemented best practices<br>
+                        • Participated in code reviews and agile development processes<br>
+                        • Built RESTful APIs and integrated third-party services
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Certificates</h2>
+                <div class="certificate-item">
+                    <div class="certificate-name">KCPE</div>
+                    <div class="certificate-date">Nov 2019</div>
+                    <div style="font-size: 0.85em; color: #666; margin-top: 5px;">
+                        After finishing my primary school education I earned the KCPE certificate
+                    </div>
+                </div>
+                <div class="certificate-item">
+                    <div class="certificate-name">KCSE</div>
+                    <div class="certificate-date">Nov 2023</div>
+                    <div style="font-size: 0.85em; color: #666; margin-top: 5px;">
+                        After finishing my primary school education I earned the KCSE certificate
+                    </div>
+                </div>
+                <div class="certificate-item">
+                    <div class="certificate-name">Create and Design Digital Products using Canva</div>
+                    <div class="certificate-date">Feb 2024</div>
+                    <div style="font-size: 0.85em; color: #666; margin-top: 5px;">
+                        I obtained a Create and Design Digital Products using Canva course by Coursera
+                    </div>
+                </div>
+                <div class="certificate-item">
+                    <div class="certificate-name">Certificate of Appreciation</div>
+                    <div class="certificate-date">Jan 2023</div>
+                    <div style="font-size: 0.85em; color: #666; margin-top: 5px;">
+                        Kagumo High Entertainment Captain
+                    </div>
+                </div>
+            </section>
+
+            <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #e0e0e0; font-size: 0.85em; color: #666; text-align: center;">
+                I consent to the processing of my personal data for the purpose of recruitmnt to the position to which I am applying.
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function downloadPDF() {
+            // Hide the download button for printing
+            document.querySelector('.download-btn').style.display = 'none';
+            
+            // Use browser's print functionality
+            window.print();
+            
+            // Show the button again after printing
+            setTimeout(() => {
+                document.querySelector('.download-btn').style.display = 'block';
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
