@@ -254,7 +254,8 @@ export const blogs = [
     summary:
       "Explore the key web development trends for 2024 and their impact on your business.",
     date: "April 25, 2025",
-    image: "/images/b1.jpg",
+    image: "/images/blogs/web.png",
+    url: "https://blog-app-b0un.onrender.com/posts/post/6922f26436be2aabdc7375ba/",
   },
   {
     id: 2,
@@ -263,6 +264,7 @@ export const blogs = [
       "Discover why custom web applications are crucial for driving business growth and efficiency.",
     date: "April 10, 2025",
     image: "/images/b2.jpg",
+    url: "https://blog-app-b0un.onrender.com/posts/post/6922f51936be2aabdc7375bf/",
   },
   {
     id: 3,
@@ -271,6 +273,7 @@ export const blogs = [
       "Understand how website speed impacts user experience and learn essential optimization tips.",
     date: "April 25, 2025",
     image: "/images/b3.jpg",
+    url: "https://blog-app-b0un.onrender.com/posts/post/6922f68936be2aabdc7375ce/",
   },
 ];
 
