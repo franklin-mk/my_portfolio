@@ -253,7 +253,7 @@ export const blogs = [
     title: "Top Web Development Trends to Watch in 2025",
     summary:
       "Explore the key web development trends for 2024 and their impact on your business.",
-    date: "April 25, 2025",
+    date: "November 23, 2025",
     image: "/images/blogs/web.png",
     url: "https://blog-app-b0un.onrender.com/posts/post/6922f26436be2aabdc7375ba/",
   },
@@ -262,7 +262,7 @@ export const blogs = [
     title: "Why Your Business Needs a Custom Web Application",
     summary:
       "Discover why custom web applications are crucial for driving business growth and efficiency.",
-    date: "April 10, 2025",
+    date: "November 23, 2025",
     image: "/images/b2.jpg",
     url: "https://blog-app-b0un.onrender.com/posts/post/6922f51936be2aabdc7375bf/",
   },
@@ -271,7 +271,7 @@ export const blogs = [
     title: "The Importance of Website Speed Optimization",
     summary:
       "Understand how website speed impacts user experience and learn essential optimization tips.",
-    date: "April 25, 2025",
+    date: "November 23, 2025",
     image: "/images/b3.jpg",
     url: "https://blog-app-b0un.onrender.com/posts/post/6922f68936be2aabdc7375ce/",
   },
