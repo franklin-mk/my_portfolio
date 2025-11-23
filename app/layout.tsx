@@ -1,5 +1,3 @@
-//app/layout.tsx
-//THIS IS THE LAYOUT HOW TO DISPLAY THE ICON
 import type { Metadata } from "next";
 import { Sora } from "next/font/google";
 import "./globals.css";
