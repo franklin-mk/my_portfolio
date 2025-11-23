@@ -214,6 +214,14 @@ export const skillsData = [
 
 export const clientReviews = [
   {
+    name: "Simon Sällström",
+    review:
+      "Franklin was a standout talent in our full-stack development program. He consistently demonstrated a deep understanding of modern web technologies and an ability to solve complex engineering problems. A highly dedicated developer.",
+    rating: 5,
+    profession: "CEO, DirectEd Development",
+    image: "/images/clientreviews/simon_sallstrom.jpg", 
+  },
+  {
     name: "John Doe",
     review:
       "Exceptional service! He delivered exactly what we needed on time. Very professional",
@@ -222,7 +230,7 @@ export const clientReviews = [
     image: "/images/u1.jpg",
   },
   {
-    name: "Jane Smith",
+    name: "Jane Doe",
     review:
       "Highly skilled developer who understand the client's vision and execute perfectly.",
     rating: 4.8,
@@ -230,7 +238,7 @@ export const clientReviews = [
     image: "/images/u2.jpg",
   },
   {
-    name: "Michael Johnson",
+    name: "Michael Doe",
     review:
       "Great communication and excellent results. Our new site performs beautifully.",
     rating: 4.6,
@@ -238,7 +246,7 @@ export const clientReviews = [
     image: "/images/u3.jpg",
   },
   {
-    name: "Emily Brown",
+    name: "Emily Doe",
     review:
       "Professional, efficient, and highly knowledgeable. Would definitely recommend his services!",
     rating: 4.9,
