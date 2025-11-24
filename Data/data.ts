@@ -238,28 +238,20 @@ export const clientReviews = [
     image: "/images/clientreviews/Vincent.jpg",
   },
   {
-    name: "Jane Doe",
+    name: "Michael Moses",
     review:
-      "Highly skilled developer who understand the client's vision and execute perfectly.",
-    rating: 4.8,
-    profession: "Business Owner",
-    image: "/images/u2.jpg",
+      "On the Event Simplified project, I needed a developer who could handle complex AI data streams. Franklin seamlessly integrated my Gen AI models into the application core, ensuring the features were fast, responsive, and scalable.",
+    rating: 5,
+    profession: "Gen AI Engineer",
+    image: "/images/clientreviews/Michael.jpg",
   },
   {
-    name: "Michael Doe",
+    name: "Kidus Elias",
     review:
-      "Great communication and excellent results. Our new site performs beautifully.",
-    rating: 4.6,
-    profession: "Project Coordinator",
-    image: "/images/u3.jpg",
-  },
-  {
-    name: "Emily Doe",
-    review:
-      "Professional, efficient, and highly knowledgeable. Would definitely recommend his services!",
-    rating: 4.9,
-    profession: "Creative Director",
-    image: "/images/u4.jpg",
+      "Managing the development roadmap for Event Simplified was a challenge, but Franklin made it easier. He took ownership of critical features, consistently hit sprint goals, and communicated technical blockers clearly. A dependable engineering partner.",
+    rating: 5,
+    profession: "Project Manager",
+    image: "/images/clientreviews/Kidus.jpg",
   },
 ];
 
