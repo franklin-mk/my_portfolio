@@ -222,12 +222,12 @@ export const clientReviews = [
     image: "/images/clientreviews/simon_sallstrom.jpg", 
   },
   {
-    name: "John Doe",
+    name: "Bernard Ngugi",
     review:
-      "Exceptional service! He delivered exactly what we needed on time. Very professional",
+      "Collaborating with Franklin on the EventSimplified project was seamless. He has a rare ability to translate my Figma designs into pixel-perfect code without losing the details. A reliable teammate who communicates clearly.",
     rating: 5,
-    profession: "Marketing Manager",
-    image: "/images/u1.jpg",
+    profession: "UI/UX Designer",
+    image: "/images/clientreviews/Bernard.jpg", 
   },
   {
     name: "Jane Doe",
