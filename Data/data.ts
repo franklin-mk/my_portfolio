@@ -222,12 +222,20 @@ export const clientReviews = [
     image: "/images/clientreviews/simon_sallstrom.jpg", 
   },
   {
-    name: "Bernard Ngugi",
+    name: "Bernard Ngungi",
     review:
       "Collaborating with Franklin on the EventSimplified project was seamless. He has a rare ability to translate my Figma designs into pixel-perfect code without losing the details. A reliable teammate who communicates clearly.",
     rating: 5,
     profession: "UI/UX Designer",
     image: "/images/clientreviews/Bernard.jpg", 
+  },
+  {
+    name: "Vincent Kingatua",
+    review:
+      "Integrating Generative AI models into a full-stack app is difficult, but Franklin made it seamless. He handled the backend API logic and frontend rendering perfectly during our group assessments. A technically gifted teammate.",
+    rating: 5,
+    profession: "Generative AI Engineer",
+    image: "/images/clientreviews/Vincent.jpg",
   },
   {
     name: "Jane Doe",
