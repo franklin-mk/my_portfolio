@@ -6,7 +6,6 @@ import { btnPrimary, scrollToId } from "./ui";
 
 interface Props {
   onCreative: (f: CreativeTab) => void;
-  // onArticle: (id: string | null) => void;
 }
 
 export default function Navbar({ onCreative }: Props) {
@@ -24,16 +23,23 @@ export default function Navbar({ onCreative }: Props) {
   const go = (href: string) => (e: MouseEvent) => {
     e.preventDefault();
     setMobileOpen(false);
-    scrollToId(href.slice(1));
+    
+    // Delay scroll slightly to allow mobile menu collapse animation to trigger cleanly
+    setTimeout(() => {
+      scrollToId(href.slice(1));
+    }, 100);
   };
 
-    const goChild = (child: NavChild) => (e: MouseEvent) => {
+  const goChild = (child: NavChild) => (e: MouseEvent) => {
     e.preventDefault();
     setMobileOpen(false);
     const a = child.action;
-    if (a?.kind === "creative") onCreative(a.filter);
-    else if (a?.kind === "article") window.location.hash = a.id ? `/blog/${a.id}` : "/blog";
-    else scrollToId(child.href.slice(1));
+
+    setTimeout(() => {
+      if (a?.kind === "creative") onCreative(a.filter);
+      else if (a?.kind === "article") window.location.hash = a.id ? `/blog/${a.id}` : "/blog";
+      else scrollToId(child.href.slice(1));
+    }, 100);
   };
 
   return (
@@ -69,7 +75,6 @@ export default function Navbar({ onCreative }: Props) {
             <FileText size={15} /> 
             <span className="hidden 2xl:inline">View CV</span>
 
-            {/* Tooltip visible on hover for screens smaller than 2xl */}
             <span className="pointer-events-none absolute -top-9 left-1/2 -translate-x-1/2 whitespace-nowrap rounded bg-slate-800 px-2.5 py-1 text-xs text-slate-200 opacity-0 shadow-md transition-opacity duration-200 group-hover:opacity-100 2xl:hidden">
               View CV
             </span>
@@ -192,7 +197,6 @@ function DesktopItem({
 }) {
   const [open, setOpen] = useState(false);
   const linkCls = "inline-flex items-center gap-1 rounded-full px-2.5 py-2 text-sm text-slate-300 transition hover:text-accent";
-  //const linkCls = "inline-flex items-center gap-1 rounded-full px-3 py-2 text-sm text-slate-300 transition hover:text-accent";
 
   if (!item.children) {
     return (
@@ -214,8 +218,7 @@ function DesktopItem({
         if (!e.currentTarget.contains(e.relatedTarget as Node | null)) setOpen(false);
       }}
     >
-
-    <div className="flex items-center">
+      <div className="flex items-center">
         <a href={item.href} onClick={go(item.href)} className={`${linkCls} !pr-1`}>
           {item.label}
         </a>
@@ -228,7 +231,7 @@ function DesktopItem({
         >
           <ChevronDown size={14} className={`transition ${open ? "rotate-180 text-accent" : ""}`} />
         </button>
-    </div>
+      </div>
 
       <AnimatePresence>
         {open && (
