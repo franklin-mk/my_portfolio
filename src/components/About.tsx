@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Award, CheckCircle2, ChevronDown, ShieldCheck } from "lucide-react";
+import { Award, CheckCircle2, ChevronDown, ExternalLink, ShieldCheck } from "lucide-react";
 import { certifications, skillGroups, timeline } from "../data";
 import { glass, glow, Reveal, Section, SectionHeading } from "./ui";
 
@@ -116,16 +116,26 @@ export default function About() {
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {certifications.map((c, i) => (
             <Reveal key={c.title} delay={(i % 4) * 0.06}>
-              <div className={`${glass} ${glow} flex h-full flex-col rounded-2xl p-5`}>
+              <a
+                href={c.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${glass} ${glow} group flex h-full flex-col rounded-2xl p-5 transition-transform duration-200 hover:-translate-y-1`}
+              >
                 <div className="flex items-center justify-between">
                   <Award size={22} className="text-cta" />
                   <span className="inline-flex items-center gap-1 rounded-full bg-emerald-400/10 px-2 py-0.5 text-[11px] font-medium text-emerald-400">
                     <ShieldCheck size={12} /> Verified
                   </span>
                 </div>
-                <p className="mt-4 flex-1 text-sm font-semibold leading-snug">{c.title}</p>
-                <p className="mt-2 text-xs text-slate-400">{c.issuer}</p>
-              </div>
+                <p className="mt-4 flex-1 text-sm font-semibold leading-snug group-hover:text-amber-400 transition-colors">
+                  {c.title}
+                </p>
+                <div className="mt-2 flex items-center justify-between text-xs text-slate-400">
+                  <span>{c.issuer}</span>
+                  <ExternalLink size={14} className="opacity-0 group-hover:opacity-100 transition-opacity text-slate-300" />
+                </div>
+              </a>
             </Reveal>
           ))}
         </div>
