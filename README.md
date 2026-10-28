@@ -1,32 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frank.M.Tech portfolio
 
-## Getting Started
+Vite + React + TypeScript + Tailwind CSS v4 + Framer Motion + Lucide.
 
-First, run the development server:
+## Run it
 
 ```bash
 npm install
-npm run dev
-
+npm run dev      # http://localhost:5173
+npm run build    # type-check + production build into dist/
+npm run preview  # serve the production build locally
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Your assets (put these in `public/`)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| File | Used for |
+| --- | --- |
+| `public/images/profile.jpeg` | Hero photo (rename your `profile image.jpeg`) |
+| `public/pdf/cv.pdf` | "View CV" button |
+| `public/images/creatives/video-1..4.jpg` | Video reel posters / thumbnails |
+| `public/images/creatives/photo-1..4.jpg` | Photography gallery |
+| `public/images/creatives/design-1..4.jpg` | Posters, logos, brand kits |
+| `public/images/projects/*.png` | Case cards (cafehub, eventsimplified, lms, blog1, mpesafigma) |
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Anything missing shows a tidy placeholder, so the site never has broken images.
+Want more than 4 per creative category? Add entries to `creatives` in `src/data.ts`; the gallery counter (`2 / 12`) updates itself.
 
-## Learn More
+## Edit content
 
-To learn more about Next.js, take a look at the following resources:
+Everything (copy, prices, projects, articles, certifications, nav menus) is in `src/data.ts`.
+Quote-calculator add-on prices are in the `ESTIMATOR` object there.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Push to GitHub and import the repo in Vercel or Netlify. Build command `npm run build`, output directory `dist`.
