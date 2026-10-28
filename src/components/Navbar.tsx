@@ -64,9 +64,15 @@ export default function Navbar({ onCreative }: Props) {
             href={CV_URL}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-slate-700 px-4 py-2 text-sm text-slate-200 transition hover:border-accent/60 hover:text-accent"
+            className="group relative inline-flex items-center gap-2 rounded-full border border-slate-700 px-4 py-2 text-sm text-slate-200 transition hover:border-accent/60 hover:text-accent"
           >
-            <FileText size={15} /> <span className="hidden 2xl:inline">View CV</span>
+            <FileText size={15} /> 
+            <span className="hidden 2xl:inline">View CV</span>
+
+            {/* Tooltip visible on hover for screens smaller than 2xl */}
+            <span className="pointer-events-none absolute -top-9 left-1/2 -translate-x-1/2 whitespace-nowrap rounded bg-slate-800 px-2.5 py-1 text-xs text-slate-200 opacity-0 shadow-md transition-opacity duration-200 group-hover:opacity-100 2xl:hidden">
+              View CV
+            </span>
           </a>
           <a href="#contact" onClick={go("#contact")} className={`${btnPrimary} !px-5 !py-2`}>
             Get a Free Quote
