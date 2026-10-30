@@ -16,6 +16,8 @@ import { Footer } from "./components/Footer";
 import { ScrollProgress, scrollToId } from "./components/ui";
 import type { CreativeTab } from "./data";
 
+import { Analytics } from "@vercel/analytics/react";
+
 type Route = { page: "home" } | { page: "blog"; id: string | null };
 
 function readRoute(): Route {
@@ -79,6 +81,7 @@ export default function App() {
       {/* <WhatsAppFab /> */}
       <WhatsAppModal open={bookOpen} onClose={closeBook} />
       <WhatsAppFloat />
+      <Analytics />
     </div>
   );
 }
