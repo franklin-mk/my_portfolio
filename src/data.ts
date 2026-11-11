@@ -60,8 +60,8 @@ export const creatives: CreativeItem[] = [
 /* Software projects                                                   */
 /* ------------------------------------------------------------------ */
 
-export type ProjectCategory = "Full Stack Web" | "M-Pesa / Mobile" | "Database / Networks" | "AI Systems";
-export const projectTabs = ["All", "Full Stack Web", "M-Pesa / Mobile", "Database / Networks", "AI Systems"] as const;
+export type ProjectCategory = "Full Stack Web" | "E-commerce" | "M-Pesa / Mobile" | "Database / Networks" | "AI Systems";
+export const projectTabs = ["All", "Full Stack Web", "E-commerce", "M-Pesa / Mobile", "Database / Networks", "AI Systems"] as const;
 export type ProjectTab = (typeof projectTabs)[number];
 
 export interface Project {
@@ -79,6 +79,24 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+    {
+    id: "wirefence",
+    title: "WireFence Supplies E-Commerce Platform",
+    kind: "Full Stack Project",
+    summary: "A fencing-materials store with M-Pesa checkout, lorry delivery tracking and an admin dashboard.",
+    highlights: [
+      "Pay Hero M-Pesa STK push with automatic payment confirmation and PDF receipts",
+      "County and weight-based lorry transport fee estimation",
+      "Live driver tracking on a map, with an admin dispatch flow",
+      "Verified-buyer reviews, enforced by a database trigger",
+    ],
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Pay Hero API", "Cloudinary", "Leaflet"],
+    categories: ["Full Stack Web", "E-commerce"],
+    image: "/images/projects/wirefence.png",
+    url: "https://wirefence-supplies.onrender.com",
+    urlLabel: "Open live project",
+    status: "Live",
+  },
   {
     id: "voting",
     title: "DeKUT Online Voting System",
