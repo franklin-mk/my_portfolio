@@ -60,8 +60,8 @@ export const creatives: CreativeItem[] = [
 /* Software projects                                                   */
 /* ------------------------------------------------------------------ */
 
-export type ProjectCategory = "Full Stack Web" | "E-commerce" | "M-Pesa / Mobile" | "Database / Networks" | "AI Systems";
-export const projectTabs = ["All", "Full Stack Web", "E-commerce", "M-Pesa / Mobile", "Database / Networks", "AI Systems"] as const;
+export type ProjectCategory = "Full Stack Web" | "E-commerce" | "M-Pesa / Mobile" | "Database / Networks" | "AI Systems" | "Frontend Web" | "UX/UI Design" | "Single Page App";
+export const projectTabs = ["All", "Full Stack Web", "E-commerce", "M-Pesa / Mobile", "Database / Networks", "AI Systems", "Frontend Web", "UX/UI Design", "Single Page App"] as const;
 export type ProjectTab = (typeof projectTabs)[number];
 
 export interface Project {
@@ -129,6 +129,24 @@ export const projects: Project[] = [
     url: "https://unit-registration.vercel.app/login",
     urlLabel: "Open live project",
     status: "Live",
+  },
+  {
+  id: "kratos-fit",
+  title: "KRATOS.FIT — Premium Calisthenics HUD & Mobile Engine",
+  kind: "Frontend Hackathon Entry",
+  summary: "A dark-mode, high-end interactive calisthenics & bodyweight progression platform inspired by Calisteniapp.",
+  highlights: [
+    "Interactive Mobile Session Simulator with real-time exercises, set/rep completion, and a working rest-timer",
+    "Dynamic 23-Week Roadmap with expanding timeline accordions for skill & movement progression (e.g., Hefesto)",
+    "Interactive 1RM Weighted Engine (Epley estimate) and a 5-step Muscle-Up Readiness Quiz with real-time verdicts",
+    "Clean custom navigation mechanics & anchor offsets paired with an immersive glassmorphic menu overlay"
+  ],
+  stack: ["HTML5", "CSS3", "JavaScript (ES6)", "Tailwind CSS CDN", "Lucide Icons"],
+  categories: ["Frontend Web", "UX/UI Design", "Single Page App"],
+  image: "/images/projects/kratos.png",
+  url: "https://kratos-fit.foundingdev.com",
+  urlLabel: "Open live project",
+  status: "Live"
   },
   {
     id: "healthcare",
