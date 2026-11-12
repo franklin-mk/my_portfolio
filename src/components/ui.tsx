@@ -1,5 +1,5 @@
 import { useEffect, type ReactNode } from "react";
-import { AnimatePresence, motion, useScroll, useSpring } from "framer-motion";
+import { AnimatePresence, motion, useScroll, useSpring, useMotionTemplate, useMotionValue, } from "framer-motion";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 
 export const glass = "bg-slate-900/90 border border-slate-800/80 backdrop-blur-xl";
@@ -16,6 +16,33 @@ export const inputCls =
 
 export function scrollToId(id: string) {
   document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+export function CursorGlow() {
+  const mouseX = useMotionValue(-500);
+  const mouseY = useMotionValue(-500);
+
+  const smoothX = useSpring(mouseX, { damping: 30, stiffness: 250 });
+  const smoothY = useSpring(mouseY, { damping: 30, stiffness: 250 });
+
+  useEffect(() => {
+    const onMove = (e: MouseEvent) => {
+      mouseX.set(e.clientX);
+      mouseY.set(e.clientY);
+    };
+    window.addEventListener("mousemove", onMove, { passive: true });
+    return () => window.removeEventListener("mousemove", onMove);
+  }, [mouseX, mouseY]);
+
+  const background = useMotionTemplate`radial-gradient(520px circle at ${smoothX}px ${smoothY}px, rgba(0, 242, 254, 0.09), transparent 80%)`;
+
+  return (
+    <motion.div
+      aria-hidden
+      style={{ background }}
+      className="pointer-events-none fixed inset-0 z-0 hidden md:block"
+    />
+  );
 }
 
 /** Fixed 3px reading progress bar */

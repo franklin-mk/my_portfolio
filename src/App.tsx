@@ -2,9 +2,10 @@ import { lazy, Suspense, useCallback, useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import WhatsAppFloat from "./components/WhatsAppFloat";
-import { ScrollProgress, scrollToId } from "./components/ui";
+import { CursorGlow, ScrollProgress, scrollToId } from "./components/ui";
 import type { CreativeTab } from "./data";
 import { Analytics } from "@vercel/analytics/react";
+import { ParticleNetwork } from "./components/ParticleNetwork";
 
 // Lazy-load below-the-fold sections & secondary views
 const Services = lazy(() => import("./components/Services"));
@@ -64,7 +65,9 @@ export default function App() {
 
   return (
     <div className="relative min-h-screen bg-ink text-white">
-      <div aria-hidden className="bg-dots pointer-events-none fixed inset-0" />
+      <div aria-hidden /* className="bg-dots pointer-events-none fixed inset-0" */ />
+      <CursorGlow />
+      <ParticleNetwork/>
       <ScrollProgress />
       <div className="relative">
         {route.page === "blog" ? (
