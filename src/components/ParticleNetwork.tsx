@@ -4,10 +4,7 @@ export function ParticleNetwork() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
   useEffect(() => {
-    if (
-      window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
-      window.matchMedia("(pointer: coarse)").matches
-    ) {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       return;
     }
 
@@ -22,10 +19,10 @@ export function ParticleNetwork() {
 
     const mouse = { x: -9999, y: -9999 };
     const getTargetCount = (w: number, h: number) =>
-      Math.min(140, Math.floor((w * h) / 9500));
+      Math.min(140, Math.max(32, Math.floor((w * h) / 9500)));
 
-    const connectDist = 180;
-    const mouseDist = 240;
+    let connectDist = width < 640 ? 125 : 180;
+    const mouseDist = width < 640 ? 180 : 240;
 
     const createParticle = (w: number, h: number) => ({
       x: Math.random() * w,
@@ -42,6 +39,7 @@ export function ParticleNetwork() {
     const onResize = () => {
       width = canvas.width = window.innerWidth;
       height = canvas.height = window.innerHeight;
+      connectDist = width < 640 ? 125 : 180;
       const target = getTargetCount(width, height);
       while (particles.length < target) particles.push(createParticle(width, height));
       if (particles.length > target) particles.length = target;
@@ -52,14 +50,25 @@ export function ParticleNetwork() {
       mouse.y = e.clientY;
     };
 
-    const onMouseLeave = () => {
+    const onTouchMove = (e: TouchEvent) => {
+      const t = e.touches[0];
+      if (t) {
+        mouse.x = t.clientX;
+        mouse.y = t.clientY;
+      }
+    };
+
+    const resetPointer = () => {
       mouse.x = -9999;
       mouse.y = -9999;
     };
 
     window.addEventListener("resize", onResize);
     window.addEventListener("mousemove", onMouseMove, { passive: true });
-    document.addEventListener("mouseleave", onMouseLeave);
+    window.addEventListener("touchstart", onTouchMove, { passive: true });
+    window.addEventListener("touchmove", onTouchMove, { passive: true });
+    window.addEventListener("touchend", resetPointer, { passive: true });
+    document.addEventListener("mouseleave", resetPointer);
 
     const render = () => {
       ctx.clearRect(0, 0, width, height);
@@ -72,13 +81,11 @@ export function ParticleNetwork() {
         if (p.x < 0 || p.x > width) p.vx *= -1;
         if (p.y < 0 || p.y > height) p.vy *= -1;
 
-        // Draw node
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
         ctx.fillStyle = "rgba(0, 242, 254, 0.5)";
         ctx.fill();
 
-        // Connect node to nearby cursor
         const distMouse = Math.hypot(p.x - mouse.x, p.y - mouse.y);
         if (distMouse < mouseDist) {
           ctx.beginPath();
@@ -89,7 +96,6 @@ export function ParticleNetwork() {
           ctx.stroke();
         }
 
-        // Connect nearby nodes to each other
         for (let j = i + 1; j < particles.length; j++) {
           const p2 = particles[j];
           const dist = Math.hypot(p.x - p2.x, p.y - p2.y);
@@ -113,7 +119,10 @@ export function ParticleNetwork() {
       cancelAnimationFrame(animId);
       window.removeEventListener("resize", onResize);
       window.removeEventListener("mousemove", onMouseMove);
-      document.removeEventListener("mouseleave", onMouseLeave);
+      window.removeEventListener("touchstart", onTouchMove);
+      window.removeEventListener("touchmove", onTouchMove);
+      window.removeEventListener("touchend", resetPointer);
+      document.removeEventListener("mouseleave", resetPointer);
     };
   }, []);
 

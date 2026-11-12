@@ -31,10 +31,28 @@ function readRoute(): Route {
   return { page: "blog", id: id ? id : null };
 }
 
+function useHasMouse() {
+  const [hasMouse, setHasMouse] = useState(() =>
+    typeof window !== "undefined"
+      ? window.matchMedia("(pointer: fine)").matches
+      : true
+  );
+
+  useEffect(() => {
+    const mq = window.matchMedia("(pointer: fine)");
+    const onChange = (e: MediaQueryListEvent) => setHasMouse(e.matches);
+    mq.addEventListener("change", onChange);
+    return () => mq.removeEventListener("change", onChange);
+  }, []);
+
+  return hasMouse;
+}
+
 export default function App() {
   const [route, setRoute] = useState<Route>(readRoute);
   const [bookOpen, setBookOpen] = useState(false);
   const [creativeFilter, setCreativeFilter] = useState<CreativeTab>("All");
+  const hasMouse = useHasMouse();
 
   const closeBook = useCallback(() => setBookOpen(false), []);
 
@@ -65,9 +83,15 @@ export default function App() {
 
   return (
     <div className="relative min-h-screen bg-ink text-white">
-      <div aria-hidden /* className="bg-dots pointer-events-none fixed inset-0" */ />
-      <CursorGlow />
-      <ParticleNetwork/>
+      {hasMouse ? (
+        <>
+          <CursorGlow />
+          <ParticleNetwork />
+        </>
+      ) : (
+        <div aria-hidden className="bg-dots pointer-events-none fixed inset-0" />
+      )}
+
       <ScrollProgress />
       <div className="relative">
         {route.page === "blog" ? (
