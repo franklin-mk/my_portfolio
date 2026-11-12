@@ -1,22 +1,25 @@
-import { useCallback, useEffect, useState } from "react";
+import { lazy, Suspense, useCallback, useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import Services from "./components/Services";
-import Creatives from "./components/Creatives";
-import Projects from "./components/Projects";
-import Blog from "./components/Blog";
-import BlogPage from "./components/BlogPage";
-import About from "./components/About";
-import Pricing from "./components/Pricing";
-import Testimonials from "./components/Testimonials";
-import Contact from "./components/Contact";
-import WhatsAppModal from "./components/WhatsAppModal";
 import WhatsAppFloat from "./components/WhatsAppFloat";
-import { Footer } from "./components/Footer";
 import { ScrollProgress, scrollToId } from "./components/ui";
 import type { CreativeTab } from "./data";
-
 import { Analytics } from "@vercel/analytics/react";
+
+// Lazy-load below-the-fold sections & secondary views
+const Services = lazy(() => import("./components/Services"));
+const Creatives = lazy(() => import("./components/Creatives"));
+const Projects = lazy(() => import("./components/Projects"));
+const Blog = lazy(() => import("./components/Blog"));
+const BlogPage = lazy(() => import("./components/BlogPage"));
+const About = lazy(() => import("./components/About"));
+const Pricing = lazy(() => import("./components/Pricing"));
+const Testimonials = lazy(() => import("./components/Testimonials"));
+const Contact = lazy(() => import("./components/Contact"));
+const WhatsAppModal = lazy(() => import("./components/WhatsAppModal"));
+const Footer = lazy(() =>
+  import("./components/Footer").then((module) => ({ default: module.Footer }))
+);
 
 type Route = { page: "home" } | { page: "blog"; id: string | null };
 
@@ -46,9 +49,17 @@ export default function App() {
     window.scrollTo(0, 0);
   }, [routeKey]);
 
+  // Waits for the lazy Creatives chunk to mount before scrolling on slower connections
   const showCreatives = useCallback((f: CreativeTab) => {
     setCreativeFilter(f);
-    setTimeout(() => scrollToId("creatives"), 40);
+    const attemptScroll = (tries = 0) => {
+      if (document.getElementById("creatives")) {
+        scrollToId("creatives");
+      } else if (tries < 10) {
+        setTimeout(() => attemptScroll(tries + 1), 50);
+      }
+    };
+    attemptScroll();
   }, []);
 
   return (
@@ -57,29 +68,41 @@ export default function App() {
       <ScrollProgress />
       <div className="relative">
         {route.page === "blog" ? (
-          <BlogPage articleId={route.id} />
+          <Suspense fallback={<div className="min-h-screen" />}>
+            <BlogPage articleId={route.id} />
+          </Suspense>
         ) : (
           <>
             <Navbar onCreative={showCreatives} />
             <main>
               <Hero onBook={() => setBookOpen(true)} />
-              <Services />
-              <Creatives filter={creativeFilter} onFilter={setCreativeFilter} />
-              <Projects />
-              <Blog />
-              <About />
-              <Pricing />
-              <Testimonials />
-              <Contact />
+              <Suspense fallback={null}>
+                <Services />
+                <Creatives filter={creativeFilter} onFilter={setCreativeFilter} />
+                <Projects />
+                <Blog />
+                <About />
+                <Pricing />
+                <Testimonials />
+                <Contact />
+              </Suspense>
             </main>
-            
-            <Footer onCreative={showCreatives} onBook={() => setBookOpen(true)} />
-            
+            <Suspense fallback={null}>
+              <Footer
+                onCreative={showCreatives}
+                onBook={() => setBookOpen(true)}
+              />
+            </Suspense>
           </>
         )}
       </div>
-      {/* <WhatsAppFab /> */}
-      <WhatsAppModal open={bookOpen} onClose={closeBook} />
+
+      {bookOpen && (
+        <Suspense fallback={null}>
+          <WhatsAppModal open={bookOpen} onClose={closeBook} />
+        </Suspense>
+      )}
+
       <WhatsAppFloat />
       <Analytics />
     </div>
