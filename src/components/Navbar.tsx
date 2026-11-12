@@ -58,6 +58,18 @@ export default function Navbar({ onCreative }: Props) {
           <span className="font-display text-lg font-semibold tracking-tight">Franklin Muriithi</span>
         </a>
 
+        {/* ----------------- IMAGE LOGO -----------------
+        <a href="#home" onClick={go("#home")} className="flex shrink-0 items-center gap-3" aria-label="Franklin Muriithi home">
+          <span className="grid h-10 w-10 place-items-center overflow-hidden rounded-full border border-accent/50 bg-accent/10 p-1.5 shadow-[0_0_20px_rgba(0,242,254,0.35)]">
+            <img
+              src="/favicon.svg"
+              alt=""
+              className="h-full w-full object-contain"
+            />
+          </span>
+          <span className="font-display text-lg font-semibold tracking-tight">Franklin Muriithi</span>
+        </a> */}
+
         <ul className="hidden items-center gap-0 xl:flex">
           {navItems.map((item) => (
             <DesktopItem key={item.label} item={item} go={go} goChild={goChild} />

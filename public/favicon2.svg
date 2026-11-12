@@ -1,0 +1,768 @@
+<svg width="452" xmlns="http://www.w3.org/2000/svg" height="452" id="screenshot-5bc032d9-35f6-8017-8008-ef77afe3c79b" viewBox="73 18 452 452" style="-webkit-print-color-adjust::exact" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1">
+  <g id="shape-5bc032d9-35f6-8017-8008-ef77afe3c79b">
+    <defs>
+      <clipPath id="frame-clip-5bc032d9-35f6-8017-8008-ef77afe3c79b-render-3840" class="frame-clip frame-clip-def">
+        <rect rx="0" ry="0" x="73" y="18" width="452" height="452" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)">
+        </rect>
+      </clipPath>
+    </defs>
+    <g class="frame-container-wrapper">
+      <g class="frame-container-blur">
+        <g class="frame-container-shadows">
+          <g clip-path="url(#frame-clip-5bc032d9-35f6-8017-8008-ef77afe3c79b-render-3840)" fill="none">
+            <g class="fills" id="fills-5bc032d9-35f6-8017-8008-ef77afe3c79b">
+              <rect rx="0" ry="0" x="73" y="18" width="452" height="452" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" class="frame-background" style="fill:#FFFFFF;fill-opacity:0">
+              </rect>
+            </g>
+            <g class="frame-children">
+              <g id="shape-5bc032d9-35f6-8017-8008-ef7768b24460" rx="0" ry="0">
+                <g id="shape-5bc032d9-35f6-8017-8008-ef77672f3ce4" rx="0" ry="0">
+                  <g id="shape-5bc032d9-35f6-8017-8008-ef75e7b43876">
+                    <defs>
+                      <pattern patternUnits="userSpaceOnUse" x="73" y="18" width="452" height="452" id="fill-0-render-3843">
+                        <g>
+                          <rect width="452" height="452" style="fill:#64bfea;fill-opacity:0.19117647058823528">
+                          </rect>
+                          <rect width="452" height="452" style="fill:#ffffff;fill-opacity:1">
+                          </rect>
+                        </g>
+                      </pattern>
+                    </defs>
+                    <g class="fills" id="fills-5bc032d9-35f6-8017-8008-ef75e7b43876">
+                      <ellipse cx="299" cy="244" rx="226" ry="226" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" fill="url(#fill-0-render-3843)">
+                      </ellipse>
+                    </g>
+                    <g id="strokes-5bc032d9-35f6-8017-8008-ef795cdd9e3a-5bc032d9-35f6-8017-8008-ef75e7b43876" class="strokes">
+                      <g class="inner-stroke-shape" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)">
+                        <defs>
+                          <clipPath id="inner-stroke-render-3843-5bc032d9-35f6-8017-8008-ef75e7b43876-0">
+                            <use href="#stroke-shape-render-3843-5bc032d9-35f6-8017-8008-ef75e7b43876-0">
+                            </use>
+                          </clipPath>
+                          <ellipse cx="299" cy="244" rx="226" ry="226" style="fill:none;fill-opacity:none;stroke-width:4;stroke:#000000;stroke-opacity:1" id="stroke-shape-render-3843-5bc032d9-35f6-8017-8008-ef75e7b43876-0">
+                          </ellipse>
+                        </defs>
+                        <use href="#stroke-shape-render-3843-5bc032d9-35f6-8017-8008-ef75e7b43876-0" clip-path="url(&#x27;#inner-stroke-render-3843-5bc032d9-35f6-8017-8008-ef75e7b43876-0&#x27;)">
+                        </use>
+                      </g>
+                    </g>
+                  </g>
+                  <g id="shape-5bc032d9-35f6-8017-8008-ef5e8e839895">
+                    <g class="fills" id="fills-5bc032d9-35f6-8017-8008-ef5e8e839895">
+                      <path d="M243,150Z">
+                      </path>
+                    </g>
+                    <g id="strokes-5bc032d9-35f6-8017-8008-ef795cdd9e3b-5bc032d9-35f6-8017-8008-ef5e8e839895" class="strokes">
+                      <g class="stroke-shape">
+                        <path d="M243,150Z" style="fill:none;fill-opacity:none;stroke-width:1;stroke:#000000;stroke-opacity:1">
+                        </path>
+                      </g>
+                    </g>
+                  </g>
+                  <g id="shape-5bc032d9-35f6-8017-8008-ef60bbf56a41">
+                    <g class="fills" id="fills-5bc032d9-35f6-8017-8008-ef60bbf56a41">
+                      <path d="M265,100L269,100L269,332.8629150390625L265,350Z" style="fill:#7e9bf4;fill-opacity:1">
+                      </path>
+                    </g>
+                  </g>
+                  <g id="shape-5bc032d9-35f6-8017-8008-ef61ce309fd6">
+                    <g class="fills" id="fills-5bc032d9-35f6-8017-8008-ef61ce309fd6">
+                      <path d="M295,131L299,131L299,363.8629150390625L295,381Z" style="fill:#7e9bf4;fill-opacity:1">
+                      </path>
+                    </g>
+                  </g>
+                  <g id="shape-5bc032d9-35f6-8017-8008-ef61464fbaee">
+                    <g class="fills" id="fills-5bc032d9-35f6-8017-8008-ef61464fbaee">
+                      <rect rx="0" ry="0" x="258" y="85" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" width="135" height="4" style="fill:#323e62;fill-opacity:1">
+                      </rect>
+                    </g>
+                  </g>
+                  <g id="shape-5bc032d9-35f6-8017-8008-ef696b2d0def">
+                    <g class="fills" id="fills-5bc032d9-35f6-8017-8008-ef696b2d0def">
+                      <rect rx="0" ry="0" x="441" y="257" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" width="38" height="4" style="fill:#323e62;fill-opacity:1">
+                      </rect>
+                    </g>
+                  </g>
+                  <g id="shape-5bc032d9-35f6-8017-8008-ef61ea2bb211">
+                    <g class="fills" id="fills-5bc032d9-35f6-8017-8008-ef61ea2bb211">
+                      <rect rx="0" ry="0" x="286" y="115" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" width="132.0000000000001" height="5" style="fill:#323e62;fill-opacity:1">
+                      </rect>
+                    </g>
+                  </g>
+                  <g id="shape-5bc032d9-35f6-8017-8008-ef6183739411">
+                    <g class="fills" id="fills-5bc032d9-35f6-8017-8008-ef6183739411">
+                      <rect rx="0" ry="0" x="159" y="195" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" width="106" height="4" style="fill:#323e62;fill-opacity:1">
+                      </rect>
+                    </g>
+                  </g>
+                  <g id="shape-5bc032d9-35f6-8017-8008-ef619f084429">
+                    <g class="fills" id="fills-5bc032d9-35f6-8017-8008-ef619f084429">
+                      <path d="M121,225L216,225L216,229L121,229Z" style="fill:#323e62;fill-opacity:1">
+                      </path>
+                    </g>
+                  </g>
+                  <g id="shape-5bc032d9-35f6-8017-8008-ef61b90d1689">
+                    <g class="fills" id="fills-5bc032d9-35f6-8017-8008-ef61b90d1689">
+                      <rect rx="0" ry="0" x="299" y="210" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" width="50" height="4" style="fill:#323e62;fill-opacity:1">
+                      </rect>
+                    </g>
+                  </g>
+                  <g id="shape-5bc032d9-35f6-8017-8008-ef661d2094fa">
+                    <g class="fills" id="fills-5bc032d9-35f6-8017-8008-ef661d2094fa">
+                      <path d="M331,270L331,360L327,360L327,315L327,270Z" style="fill:#323d62;fill-opacity:1">
+                      </path>
+                    </g>
+                  </g>
+                  <g id="shape-5bc032d9-35f6-8017-8008-ef6896e5d2de">
+                    <g class="fills" id="fills-5bc032d9-35f6-8017-8008-ef6896e5d2de">
+                      <path d="M479,261L479,360L475,360L475,310.5L475,261Z" style="fill:#323e62;fill-opacity:1">
+                      </path>
+                    </g>
+                  </g>
+                  <g id="shape-5bc032d9-35f6-8017-8008-ef6535f4d988">
+                    <g class="fills" id="fills-5bc032d9-35f6-8017-8008-ef6535f4d988">
+                      <rect rx="0" ry="0" x="299" y="240" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" width="28" height="4" style="fill:#323e62;fill-opacity:1">
+                      </rect>
+                    </g>
+                  </g>
+                  <g id="shape-5bc032d9-35f6-8017-8008-ef70dad2c7e7">
+                    <g class="fills" id="fills-5bc032d9-35f6-8017-8008-ef70dad2c7e7">
+                      <rect rx="0" ry="0" x="299" y="186" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" width="28" height="4" style="fill:#323e62;fill-opacity:1">
+                      </rect>
+                    </g>
+                  </g>
+                  <g id="shape-5bc032d9-35f6-8017-8008-ef64958644a7">
+                    <g class="fills" id="fills-5bc032d9-35f6-8017-8008-ef64958644a7">
+                      <rect rx="0" ry="0" x="363" y="227" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" width="49" height="4" style="fill:#323e62;fill-opacity:1">
+                      </rect>
+                    </g>
+                  </g>
+                  <g id="shape-5bc032d9-35f6-8017-8008-ef6375a5cdf3">
+                    <g class="fills" id="fills-5bc032d9-35f6-8017-8008-ef6375a5cdf3">
+                      <rect rx="0" ry="0" x="353.2283934303807" y="207.9815791315846" transform="matrix(-0.694658, 0.719340, -0.719340, -0.694658, 761.439275, 117.751362)" width="5.000000000000022" height="25.00000000000007" style="fill:#323e62;fill-opacity:1">
+                      </rect>
+                    </g>
+                  </g>
+                  <g id="shape-5bc032d9-35f6-8017-8008-ef6e4be4d375">
+                    <g class="fills" id="fills-5bc032d9-35f6-8017-8008-ef6e4be4d375">
+                      <rect rx="0" ry="0" x="385.2283934303807" y="246.98157913158445" transform="matrix(-0.694658, 0.719340, -0.719340, -0.694658, 843.722595, 160.824165)" width="5" height="25.000000000000114" style="fill:#323e62;fill-opacity:1">
+                      </rect>
+                    </g>
+                  </g>
+                  <g id="shape-5bc032d9-35f6-8017-8008-ef6869b72a6d">
+                    <g class="fills" id="fills-5bc032d9-35f6-8017-8008-ef6869b72a6d">
+                      <rect rx="0" ry="0" x="420.4135389380008" y="259.11139246691164" transform="matrix(0.694658, 0.719340, -0.719340, 0.694658, 340.699139, -214.414089)" width="5" height="70" style="fill:#323e62;fill-opacity:1">
+                      </rect>
+                    </g>
+                  </g>
+                  <g id="shape-5bc032d9-35f6-8017-8008-ef65834da137">
+                    <g class="fills" id="fills-5bc032d9-35f6-8017-8008-ef65834da137">
+                      <rect rx="0" ry="0" x="423.7407341453208" y="96.46923841664429" transform="matrix(0.694658, 0.719340, -0.719340, 0.694658, 208.741950, -272.826739)" width="4" height="26" style="fill:#323e62;fill-opacity:1">
+                      </rect>
+                    </g>
+                  </g>
+                  <g id="shape-5bc032d9-35f6-8017-8008-ef6eb69dc89c">
+                    <g class="fills" id="fills-5bc032d9-35f6-8017-8008-ef6eb69dc89c">
+                      <rect rx="0" ry="0" x="248.3810642451515" y="82.62190923141482" transform="matrix(0.694658, 0.719340, -0.719340, 0.694658, 144.876737, -151.064386)" width="4" height="25.000000000000014" style="fill:#323e62;fill-opacity:1">
+                      </rect>
+                    </g>
+                  </g>
+                  <g id="shape-5bc032d9-35f6-8017-8008-ef66c8a3cf8d">
+                    <g class="fills" id="fills-5bc032d9-35f6-8017-8008-ef66c8a3cf8d">
+                      <rect rx="0" ry="0" x="365.27194847109735" y="236.90530535673201" transform="matrix(-0.694658, 0.719340, -0.719340, -0.694658, 826.393187, 214.027515)" width="4.999999999999947" height="91.00000000000003" style="fill:#323e62;fill-opacity:1">
+                      </rect>
+                    </g>
+                  </g>
+                  <g id="shape-5bc032d9-35f6-8017-8008-ef6b58e27657">
+                    <g class="fills" id="fills-5bc032d9-35f6-8017-8008-ef6b58e27657">
+                      <rect rx="0" ry="0" x="434.50000000000006" y="340.5" transform="matrix(0.000000, 1.000000, -1.000000, 0.000000, 794.500000, -109.500000)" width="35" height="4" style="fill:#323e62;fill-opacity:1">
+                      </rect>
+                    </g>
+                  </g>
+                  <g id="shape-5bc032d9-35f6-8017-8008-ef6c5cac1f78">
+                    <g class="fills" id="fills-5bc032d9-35f6-8017-8008-ef6c5cac1f78">
+                      <rect rx="0" ry="0" x="336.5000000000001" y="340.5" transform="matrix(0.000000, 1.000000, -1.000000, 0.000000, 696.500000, -11.500000)" width="35" height="4" style="fill:#323e62;fill-opacity:1">
+                      </rect>
+                    </g>
+                  </g>
+                  <g id="shape-5bc032d9-35f6-8017-8008-ef7089c1f5a8">
+                    <g class="fills" id="fills-5bc032d9-35f6-8017-8008-ef7089c1f5a8">
+                      <rect rx="0" ry="0" x="324" y="360.00000000000006" transform="matrix(-1.000000, 0.000000, 0.000000, -1.000000, 683.000000, 724.000000)" width="35" height="4" style="fill:#323e62;fill-opacity:1">
+                      </rect>
+                    </g>
+                  </g>
+                  <g id="shape-5bc032d9-35f6-8017-8008-ef6cc4618981">
+                    <defs>
+                      <filter id="filter-render-3867" x="0" y="0" width="1" height="1" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix">
+                        </feFlood>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape">
+                        </feBlend>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                        </feColorMatrix>
+                        <feOffset dx="4" dy="4">
+                        </feOffset>
+                        <feGaussianBlur stdDeviation="2">
+                        </feGaussianBlur>
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+                        </feComposite>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.1843137254901961 0 0 0 0 0.3411764705882353 0 0 0 0 0.3058823529411765 0 0 0 0.2 0">
+                        </feColorMatrix>
+                        <feBlend mode="normal" in2="shape" result="filter_5bc032d9-35f6-8017-8008-ef6ddc38b45a">
+                        </feBlend>
+                      </filter>
+                      <filter id="filter-shadow-render-3867" x="0" y="0" width="1" height="1" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix">
+                        </feFlood>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape">
+                        </feBlend>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                        </feColorMatrix>
+                        <feOffset dx="4" dy="4">
+                        </feOffset>
+                        <feGaussianBlur stdDeviation="2">
+                        </feGaussianBlur>
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+                        </feComposite>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.1843137254901961 0 0 0 0 0.3411764705882353 0 0 0 0 0.3058823529411765 0 0 0 0.2 0">
+                        </feColorMatrix>
+                        <feBlend mode="normal" in2="shape" result="filter_5bc032d9-35f6-8017-8008-ef6ddc38b45a">
+                        </feBlend>
+                      </filter>
+                    </defs>
+                    <g class="fills" id="fills-5bc032d9-35f6-8017-8008-ef6cc4618981">
+                      <ellipse cx="435.5" cy="98.5" rx="7.5" ry="7.5" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" filter="url(#filter-render-3867)" style="fill:#b1b2b5;fill-opacity:1">
+                      </ellipse>
+                    </g>
+                    <g id="strokes-5bc032d9-35f6-8017-8008-ef795ce03b60-5bc032d9-35f6-8017-8008-ef6cc4618981" class="strokes">
+                      <g class="inner-stroke-shape" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)">
+                        <defs>
+                          <clipPath id="inner-stroke-render-3867-5bc032d9-35f6-8017-8008-ef6cc4618981-1">
+                            <use href="#stroke-shape-render-3867-5bc032d9-35f6-8017-8008-ef6cc4618981-1">
+                            </use>
+                          </clipPath>
+                          <ellipse cx="435.5" cy="98.5" rx="7.5" ry="7.5" style="fill:none;fill-opacity:none;stroke-width:2;stroke:#001d72;stroke-opacity:1" id="stroke-shape-render-3867-5bc032d9-35f6-8017-8008-ef6cc4618981-1">
+                          </ellipse>
+                        </defs>
+                        <use href="#stroke-shape-render-3867-5bc032d9-35f6-8017-8008-ef6cc4618981-1" clip-path="url(&#x27;#inner-stroke-render-3867-5bc032d9-35f6-8017-8008-ef6cc4618981-1&#x27;)">
+                        </use>
+                      </g>
+                      <g class="inner-stroke-shape" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)">
+                        <defs>
+                          <clipPath id="inner-stroke-render-3867-5bc032d9-35f6-8017-8008-ef6cc4618981-0">
+                            <use href="#stroke-shape-render-3867-5bc032d9-35f6-8017-8008-ef6cc4618981-0">
+                            </use>
+                          </clipPath>
+                          <ellipse cx="435.5" cy="98.5" rx="7.5" ry="7.5" style="fill:none;fill-opacity:none;stroke-width:2;stroke:#001d72;stroke-opacity:1" id="stroke-shape-render-3867-5bc032d9-35f6-8017-8008-ef6cc4618981-0">
+                          </ellipse>
+                        </defs>
+                        <use href="#stroke-shape-render-3867-5bc032d9-35f6-8017-8008-ef6cc4618981-0" clip-path="url(&#x27;#inner-stroke-render-3867-5bc032d9-35f6-8017-8008-ef6cc4618981-0&#x27;)">
+                        </use>
+                      </g>
+                    </g>
+                  </g>
+                  <g id="shape-5bc032d9-35f6-8017-8008-ef6ebfe5d3f2">
+                    <defs>
+                      <filter id="filter-render-3868" x="0" y="0" width="1" height="1" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix">
+                        </feFlood>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape">
+                        </feBlend>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                        </feColorMatrix>
+                        <feOffset dx="4" dy="4">
+                        </feOffset>
+                        <feGaussianBlur stdDeviation="2">
+                        </feGaussianBlur>
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+                        </feComposite>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.1843137254901961 0 0 0 0 0.3411764705882353 0 0 0 0 0.3058823529411765 0 0 0 0.2 0">
+                        </feColorMatrix>
+                        <feBlend mode="normal" in2="shape" result="filter_5bc032d9-35f6-8017-8008-ef6ddc38b45a">
+                        </feBlend>
+                      </filter>
+                      <filter id="filter-shadow-render-3868" x="0" y="0" width="1" height="1" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix">
+                        </feFlood>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape">
+                        </feBlend>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                        </feColorMatrix>
+                        <feOffset dx="4" dy="4">
+                        </feOffset>
+                        <feGaussianBlur stdDeviation="2">
+                        </feGaussianBlur>
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+                        </feComposite>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.1843137254901961 0 0 0 0 0.3411764705882353 0 0 0 0 0.3058823529411765 0 0 0 0.2 0">
+                        </feColorMatrix>
+                        <feBlend mode="normal" in2="shape" result="filter_5bc032d9-35f6-8017-8008-ef6ddc38b45a">
+                        </feBlend>
+                      </filter>
+                    </defs>
+                    <g class="fills" id="fills-5bc032d9-35f6-8017-8008-ef6ebfe5d3f2">
+                      <ellipse cx="240.5" cy="104.5" rx="7.5" ry="7.5" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" filter="url(#filter-render-3868)" style="fill:#b1b2b5;fill-opacity:1">
+                      </ellipse>
+                    </g>
+                    <g id="strokes-5bc032d9-35f6-8017-8008-ef795ce06d85-5bc032d9-35f6-8017-8008-ef6ebfe5d3f2" class="strokes">
+                      <g class="inner-stroke-shape" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)">
+                        <defs>
+                          <clipPath id="inner-stroke-render-3868-5bc032d9-35f6-8017-8008-ef6ebfe5d3f2-1">
+                            <use href="#stroke-shape-render-3868-5bc032d9-35f6-8017-8008-ef6ebfe5d3f2-1">
+                            </use>
+                          </clipPath>
+                          <ellipse cx="240.5" cy="104.5" rx="7.5" ry="7.5" style="fill:none;fill-opacity:none;stroke-width:2;stroke:#001d72;stroke-opacity:1" id="stroke-shape-render-3868-5bc032d9-35f6-8017-8008-ef6ebfe5d3f2-1">
+                          </ellipse>
+                        </defs>
+                        <use href="#stroke-shape-render-3868-5bc032d9-35f6-8017-8008-ef6ebfe5d3f2-1" clip-path="url(&#x27;#inner-stroke-render-3868-5bc032d9-35f6-8017-8008-ef6ebfe5d3f2-1&#x27;)">
+                        </use>
+                      </g>
+                      <g class="inner-stroke-shape" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)">
+                        <defs>
+                          <clipPath id="inner-stroke-render-3868-5bc032d9-35f6-8017-8008-ef6ebfe5d3f2-0">
+                            <use href="#stroke-shape-render-3868-5bc032d9-35f6-8017-8008-ef6ebfe5d3f2-0">
+                            </use>
+                          </clipPath>
+                          <ellipse cx="240.5" cy="104.5" rx="7.5" ry="7.5" style="fill:none;fill-opacity:none;stroke-width:2;stroke:#001d72;stroke-opacity:1" id="stroke-shape-render-3868-5bc032d9-35f6-8017-8008-ef6ebfe5d3f2-0">
+                          </ellipse>
+                        </defs>
+                        <use href="#stroke-shape-render-3868-5bc032d9-35f6-8017-8008-ef6ebfe5d3f2-0" clip-path="url(&#x27;#inner-stroke-render-3868-5bc032d9-35f6-8017-8008-ef6ebfe5d3f2-0&#x27;)">
+                        </use>
+                      </g>
+                    </g>
+                  </g>
+                  <g id="shape-5bc032d9-35f6-8017-8008-ef6d4ae6d9fe">
+                    <g class="fills" id="fills-5bc032d9-35f6-8017-8008-ef6d4ae6d9fe">
+                      <rect rx="0" ry="0" x="110.38106424515149" y="222.6219092314148" transform="matrix(0.694658, 0.719340, -0.719340, 0.694658, 203.447165, -9.047665)" width="3.999999999999986" height="25.00000000000003" style="fill:#323e62;fill-opacity:1">
+                      </rect>
+                    </g>
+                  </g>
+                  <g id="shape-5bc032d9-35f6-8017-8008-ef6e16b2b74b">
+                    <defs>
+                      <filter id="filter-render-3870" x="0" y="0" width="1" height="1" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix">
+                        </feFlood>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape">
+                        </feBlend>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                        </feColorMatrix>
+                        <feOffset dx="4" dy="4">
+                        </feOffset>
+                        <feGaussianBlur stdDeviation="2">
+                        </feGaussianBlur>
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+                        </feComposite>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.1843137254901961 0 0 0 0 0.3411764705882353 0 0 0 0 0.3058823529411765 0 0 0 0.2 0">
+                        </feColorMatrix>
+                        <feBlend mode="normal" in2="shape" result="filter_5bc032d9-35f6-8017-8008-ef6ddc38b45a">
+                        </feBlend>
+                      </filter>
+                      <filter id="filter-shadow-render-3870" x="0" y="0" width="1" height="1" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix">
+                        </feFlood>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape">
+                        </feBlend>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                        </feColorMatrix>
+                        <feOffset dx="4" dy="4">
+                        </feOffset>
+                        <feGaussianBlur stdDeviation="2">
+                        </feGaussianBlur>
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+                        </feComposite>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.1843137254901961 0 0 0 0 0.3411764705882353 0 0 0 0 0.3058823529411765 0 0 0 0.2 0">
+                        </feColorMatrix>
+                        <feBlend mode="normal" in2="shape" result="filter_5bc032d9-35f6-8017-8008-ef6ddc38b45a">
+                        </feBlend>
+                      </filter>
+                    </defs>
+                    <g class="fills" id="fills-5bc032d9-35f6-8017-8008-ef6e16b2b74b">
+                      <ellipse cx="97.5" cy="247.5" rx="7.5" ry="7.5" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" filter="url(#filter-render-3870)" style="fill:#b1b2b5;fill-opacity:1">
+                      </ellipse>
+                    </g>
+                    <g id="strokes-5bc032d9-35f6-8017-8008-ef795ce06d87-5bc032d9-35f6-8017-8008-ef6e16b2b74b" class="strokes">
+                      <g class="inner-stroke-shape" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)">
+                        <defs>
+                          <clipPath id="inner-stroke-render-3870-5bc032d9-35f6-8017-8008-ef6e16b2b74b-1">
+                            <use href="#stroke-shape-render-3870-5bc032d9-35f6-8017-8008-ef6e16b2b74b-1">
+                            </use>
+                          </clipPath>
+                          <ellipse cx="97.5" cy="247.5" rx="7.5" ry="7.5" style="fill:none;fill-opacity:none;stroke-width:2;stroke:#001d72;stroke-opacity:1" id="stroke-shape-render-3870-5bc032d9-35f6-8017-8008-ef6e16b2b74b-1">
+                          </ellipse>
+                        </defs>
+                        <use href="#stroke-shape-render-3870-5bc032d9-35f6-8017-8008-ef6e16b2b74b-1" clip-path="url(&#x27;#inner-stroke-render-3870-5bc032d9-35f6-8017-8008-ef6e16b2b74b-1&#x27;)">
+                        </use>
+                      </g>
+                      <g class="inner-stroke-shape" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)">
+                        <defs>
+                          <clipPath id="inner-stroke-render-3870-5bc032d9-35f6-8017-8008-ef6e16b2b74b-0">
+                            <use href="#stroke-shape-render-3870-5bc032d9-35f6-8017-8008-ef6e16b2b74b-0">
+                            </use>
+                          </clipPath>
+                          <ellipse cx="97.5" cy="247.5" rx="7.5" ry="7.5" style="fill:none;fill-opacity:none;stroke-width:2;stroke:#001d72;stroke-opacity:1" id="stroke-shape-render-3870-5bc032d9-35f6-8017-8008-ef6e16b2b74b-0">
+                          </ellipse>
+                        </defs>
+                        <use href="#stroke-shape-render-3870-5bc032d9-35f6-8017-8008-ef6e16b2b74b-0" clip-path="url(&#x27;#inner-stroke-render-3870-5bc032d9-35f6-8017-8008-ef6e16b2b74b-0&#x27;)">
+                        </use>
+                      </g>
+                    </g>
+                  </g>
+                  <g id="shape-5bc032d9-35f6-8017-8008-ef6e213a3b8d">
+                    <defs>
+                      <filter id="filter-render-3871" x="0" y="0" width="1" height="1" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix">
+                        </feFlood>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape">
+                        </feBlend>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                        </feColorMatrix>
+                        <feOffset dx="4" dy="4">
+                        </feOffset>
+                        <feGaussianBlur stdDeviation="2">
+                        </feGaussianBlur>
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+                        </feComposite>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.1843137254901961 0 0 0 0 0.3411764705882353 0 0 0 0 0.3058823529411765 0 0 0 0.2 0">
+                        </feColorMatrix>
+                        <feBlend mode="normal" in2="shape" result="filter_5bc032d9-35f6-8017-8008-ef6ddc38b45a">
+                        </feBlend>
+                      </filter>
+                      <filter id="filter-shadow-render-3871" x="0" y="0" width="1" height="1" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix">
+                        </feFlood>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape">
+                        </feBlend>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                        </feColorMatrix>
+                        <feOffset dx="4" dy="4">
+                        </feOffset>
+                        <feGaussianBlur stdDeviation="2">
+                        </feGaussianBlur>
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+                        </feComposite>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.1843137254901961 0 0 0 0 0.3411764705882353 0 0 0 0 0.3058823529411765 0 0 0 0.2 0">
+                        </feColorMatrix>
+                        <feBlend mode="normal" in2="shape" result="filter_5bc032d9-35f6-8017-8008-ef6ddc38b45a">
+                        </feBlend>
+                      </filter>
+                    </defs>
+                    <g class="fills" id="fills-5bc032d9-35f6-8017-8008-ef6e213a3b8d">
+                      <ellipse cx="416.5" cy="228.5" rx="7.5" ry="7.5" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" filter="url(#filter-render-3871)" style="fill:#b1b2b5;fill-opacity:1">
+                      </ellipse>
+                    </g>
+                    <g id="strokes-5bc032d9-35f6-8017-8008-ef795ce08141-5bc032d9-35f6-8017-8008-ef6e213a3b8d" class="strokes">
+                      <g class="inner-stroke-shape" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)">
+                        <defs>
+                          <clipPath id="inner-stroke-render-3871-5bc032d9-35f6-8017-8008-ef6e213a3b8d-1">
+                            <use href="#stroke-shape-render-3871-5bc032d9-35f6-8017-8008-ef6e213a3b8d-1">
+                            </use>
+                          </clipPath>
+                          <ellipse cx="416.5" cy="228.5" rx="7.5" ry="7.5" style="fill:none;fill-opacity:none;stroke-width:2;stroke:#001d72;stroke-opacity:1" id="stroke-shape-render-3871-5bc032d9-35f6-8017-8008-ef6e213a3b8d-1">
+                          </ellipse>
+                        </defs>
+                        <use href="#stroke-shape-render-3871-5bc032d9-35f6-8017-8008-ef6e213a3b8d-1" clip-path="url(&#x27;#inner-stroke-render-3871-5bc032d9-35f6-8017-8008-ef6e213a3b8d-1&#x27;)">
+                        </use>
+                      </g>
+                      <g class="inner-stroke-shape" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)">
+                        <defs>
+                          <clipPath id="inner-stroke-render-3871-5bc032d9-35f6-8017-8008-ef6e213a3b8d-0">
+                            <use href="#stroke-shape-render-3871-5bc032d9-35f6-8017-8008-ef6e213a3b8d-0">
+                            </use>
+                          </clipPath>
+                          <ellipse cx="416.5" cy="228.5" rx="7.5" ry="7.5" style="fill:none;fill-opacity:none;stroke-width:2;stroke:#001d72;stroke-opacity:1" id="stroke-shape-render-3871-5bc032d9-35f6-8017-8008-ef6e213a3b8d-0">
+                          </ellipse>
+                        </defs>
+                        <use href="#stroke-shape-render-3871-5bc032d9-35f6-8017-8008-ef6e213a3b8d-0" clip-path="url(&#x27;#inner-stroke-render-3871-5bc032d9-35f6-8017-8008-ef6e213a3b8d-0&#x27;)">
+                        </use>
+                      </g>
+                    </g>
+                  </g>
+                  <g id="shape-5bc032d9-35f6-8017-8008-ef710b652e67">
+                    <defs>
+                      <filter id="filter-render-3872" x="0" y="0" width="1" height="1" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix">
+                        </feFlood>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape">
+                        </feBlend>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                        </feColorMatrix>
+                        <feOffset dx="4" dy="4">
+                        </feOffset>
+                        <feGaussianBlur stdDeviation="2">
+                        </feGaussianBlur>
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+                        </feComposite>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.1843137254901961 0 0 0 0 0.3411764705882353 0 0 0 0 0.3058823529411765 0 0 0 0.2 0">
+                        </feColorMatrix>
+                        <feBlend mode="normal" in2="shape" result="filter_5bc032d9-35f6-8017-8008-ef6ddc38b45a">
+                        </feBlend>
+                      </filter>
+                      <filter id="filter-shadow-render-3872" x="0" y="0" width="1" height="1" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix">
+                        </feFlood>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape">
+                        </feBlend>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                        </feColorMatrix>
+                        <feOffset dx="4" dy="4">
+                        </feOffset>
+                        <feGaussianBlur stdDeviation="2">
+                        </feGaussianBlur>
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+                        </feComposite>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.1843137254901961 0 0 0 0 0.3411764705882353 0 0 0 0 0.3058823529411765 0 0 0 0.2 0">
+                        </feColorMatrix>
+                        <feBlend mode="normal" in2="shape" result="filter_5bc032d9-35f6-8017-8008-ef6ddc38b45a">
+                        </feBlend>
+                      </filter>
+                    </defs>
+                    <g class="fills" id="fills-5bc032d9-35f6-8017-8008-ef710b652e67">
+                      <ellipse cx="340.5" cy="187.5" rx="7.5" ry="7.5" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" filter="url(#filter-render-3872)" style="fill:#b1b2b5;fill-opacity:1">
+                      </ellipse>
+                    </g>
+                    <g id="strokes-5bc032d9-35f6-8017-8008-ef795ce08142-5bc032d9-35f6-8017-8008-ef710b652e67" class="strokes">
+                      <g class="inner-stroke-shape" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)">
+                        <defs>
+                          <clipPath id="inner-stroke-render-3872-5bc032d9-35f6-8017-8008-ef710b652e67-1">
+                            <use href="#stroke-shape-render-3872-5bc032d9-35f6-8017-8008-ef710b652e67-1">
+                            </use>
+                          </clipPath>
+                          <ellipse cx="340.5" cy="187.5" rx="7.5" ry="7.5" style="fill:none;fill-opacity:none;stroke-width:2;stroke:#001d72;stroke-opacity:1" id="stroke-shape-render-3872-5bc032d9-35f6-8017-8008-ef710b652e67-1">
+                          </ellipse>
+                        </defs>
+                        <use href="#stroke-shape-render-3872-5bc032d9-35f6-8017-8008-ef710b652e67-1" clip-path="url(&#x27;#inner-stroke-render-3872-5bc032d9-35f6-8017-8008-ef710b652e67-1&#x27;)">
+                        </use>
+                      </g>
+                      <g class="inner-stroke-shape" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)">
+                        <defs>
+                          <clipPath id="inner-stroke-render-3872-5bc032d9-35f6-8017-8008-ef710b652e67-0">
+                            <use href="#stroke-shape-render-3872-5bc032d9-35f6-8017-8008-ef710b652e67-0">
+                            </use>
+                          </clipPath>
+                          <ellipse cx="340.5" cy="187.5" rx="7.5" ry="7.5" style="fill:none;fill-opacity:none;stroke-width:2;stroke:#001d72;stroke-opacity:1" id="stroke-shape-render-3872-5bc032d9-35f6-8017-8008-ef710b652e67-0">
+                          </ellipse>
+                        </defs>
+                        <use href="#stroke-shape-render-3872-5bc032d9-35f6-8017-8008-ef710b652e67-0" clip-path="url(&#x27;#inner-stroke-render-3872-5bc032d9-35f6-8017-8008-ef710b652e67-0&#x27;)">
+                        </use>
+                      </g>
+                    </g>
+                  </g>
+                  <g id="shape-5bc032d9-35f6-8017-8008-ef711798eaa6">
+                    <defs>
+                      <filter id="filter-render-3873" x="0" y="0" width="1" height="1" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix">
+                        </feFlood>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape">
+                        </feBlend>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                        </feColorMatrix>
+                        <feOffset dx="4" dy="4">
+                        </feOffset>
+                        <feGaussianBlur stdDeviation="2">
+                        </feGaussianBlur>
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+                        </feComposite>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.1843137254901961 0 0 0 0 0.3411764705882353 0 0 0 0 0.3058823529411765 0 0 0 0.2 0">
+                        </feColorMatrix>
+                        <feBlend mode="normal" in2="shape" result="filter_5bc032d9-35f6-8017-8008-ef6ddc38b45a">
+                        </feBlend>
+                      </filter>
+                      <filter id="filter-shadow-render-3873" x="0" y="0" width="1" height="1" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix">
+                        </feFlood>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape">
+                        </feBlend>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                        </feColorMatrix>
+                        <feOffset dx="4" dy="4">
+                        </feOffset>
+                        <feGaussianBlur stdDeviation="2">
+                        </feGaussianBlur>
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+                        </feComposite>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.1843137254901961 0 0 0 0 0.3411764705882353 0 0 0 0 0.3058823529411765 0 0 0 0.2 0">
+                        </feColorMatrix>
+                        <feBlend mode="normal" in2="shape" result="filter_5bc032d9-35f6-8017-8008-ef6ddc38b45a">
+                        </feBlend>
+                      </filter>
+                    </defs>
+                    <g class="fills" id="fills-5bc032d9-35f6-8017-8008-ef711798eaa6">
+                      <ellipse cx="356" cy="188" rx="5" ry="5" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" filter="url(#filter-render-3873)" style="fill:#b1b2b5;fill-opacity:1">
+                      </ellipse>
+                    </g>
+                    <g id="strokes-5bc032d9-35f6-8017-8008-ef795ce0d82b-5bc032d9-35f6-8017-8008-ef711798eaa6" class="strokes">
+                      <g class="inner-stroke-shape" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)">
+                        <defs>
+                          <clipPath id="inner-stroke-render-3873-5bc032d9-35f6-8017-8008-ef711798eaa6-1">
+                            <use href="#stroke-shape-render-3873-5bc032d9-35f6-8017-8008-ef711798eaa6-1">
+                            </use>
+                          </clipPath>
+                          <ellipse cx="356" cy="188" rx="5" ry="5" style="fill:none;fill-opacity:none;stroke-width:2;stroke:#001d72;stroke-opacity:1" id="stroke-shape-render-3873-5bc032d9-35f6-8017-8008-ef711798eaa6-1">
+                          </ellipse>
+                        </defs>
+                        <use href="#stroke-shape-render-3873-5bc032d9-35f6-8017-8008-ef711798eaa6-1" clip-path="url(&#x27;#inner-stroke-render-3873-5bc032d9-35f6-8017-8008-ef711798eaa6-1&#x27;)">
+                        </use>
+                      </g>
+                      <g class="inner-stroke-shape" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)">
+                        <defs>
+                          <clipPath id="inner-stroke-render-3873-5bc032d9-35f6-8017-8008-ef711798eaa6-0">
+                            <use href="#stroke-shape-render-3873-5bc032d9-35f6-8017-8008-ef711798eaa6-0">
+                            </use>
+                          </clipPath>
+                          <ellipse cx="356" cy="188" rx="5" ry="5" style="fill:none;fill-opacity:none;stroke-width:2;stroke:#001d72;stroke-opacity:1" id="stroke-shape-render-3873-5bc032d9-35f6-8017-8008-ef711798eaa6-0">
+                          </ellipse>
+                        </defs>
+                        <use href="#stroke-shape-render-3873-5bc032d9-35f6-8017-8008-ef711798eaa6-0" clip-path="url(&#x27;#inner-stroke-render-3873-5bc032d9-35f6-8017-8008-ef711798eaa6-0&#x27;)">
+                        </use>
+                      </g>
+                    </g>
+                  </g>
+                  <g id="shape-5bc032d9-35f6-8017-8008-ef713d7602e9">
+                    <defs>
+                      <filter id="filter-render-3874" x="0" y="0" width="1" height="1" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix">
+                        </feFlood>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape">
+                        </feBlend>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                        </feColorMatrix>
+                        <feOffset dx="4" dy="4">
+                        </feOffset>
+                        <feGaussianBlur stdDeviation="2">
+                        </feGaussianBlur>
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+                        </feComposite>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.1843137254901961 0 0 0 0 0.3411764705882353 0 0 0 0 0.3058823529411765 0 0 0 0.2 0">
+                        </feColorMatrix>
+                        <feBlend mode="normal" in2="shape" result="filter_5bc032d9-35f6-8017-8008-ef6ddc38b45a">
+                        </feBlend>
+                      </filter>
+                      <filter id="filter-shadow-render-3874" x="0" y="0" width="1" height="1" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix">
+                        </feFlood>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape">
+                        </feBlend>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                        </feColorMatrix>
+                        <feOffset dx="4" dy="4">
+                        </feOffset>
+                        <feGaussianBlur stdDeviation="2">
+                        </feGaussianBlur>
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+                        </feComposite>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.1843137254901961 0 0 0 0 0.3411764705882353 0 0 0 0 0.3058823529411765 0 0 0 0.2 0">
+                        </feColorMatrix>
+                        <feBlend mode="normal" in2="shape" result="filter_5bc032d9-35f6-8017-8008-ef6ddc38b45a">
+                        </feBlend>
+                      </filter>
+                    </defs>
+                    <g class="fills" id="fills-5bc032d9-35f6-8017-8008-ef713d7602e9">
+                      <ellipse cx="367" cy="188" rx="3" ry="3" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" filter="url(#filter-render-3874)" style="fill:#b1b2b5;fill-opacity:1">
+                      </ellipse>
+                    </g>
+                    <g id="strokes-5bc032d9-35f6-8017-8008-ef795ce0d82c-5bc032d9-35f6-8017-8008-ef713d7602e9" class="strokes">
+                      <g class="inner-stroke-shape" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)">
+                        <defs>
+                          <clipPath id="inner-stroke-render-3874-5bc032d9-35f6-8017-8008-ef713d7602e9-1">
+                            <use href="#stroke-shape-render-3874-5bc032d9-35f6-8017-8008-ef713d7602e9-1">
+                            </use>
+                          </clipPath>
+                          <ellipse cx="367" cy="188" rx="3" ry="3" style="fill:none;fill-opacity:none;stroke-width:2;stroke:#001d72;stroke-opacity:1" id="stroke-shape-render-3874-5bc032d9-35f6-8017-8008-ef713d7602e9-1">
+                          </ellipse>
+                        </defs>
+                        <use href="#stroke-shape-render-3874-5bc032d9-35f6-8017-8008-ef713d7602e9-1" clip-path="url(&#x27;#inner-stroke-render-3874-5bc032d9-35f6-8017-8008-ef713d7602e9-1&#x27;)">
+                        </use>
+                      </g>
+                      <g class="inner-stroke-shape" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)">
+                        <defs>
+                          <clipPath id="inner-stroke-render-3874-5bc032d9-35f6-8017-8008-ef713d7602e9-0">
+                            <use href="#stroke-shape-render-3874-5bc032d9-35f6-8017-8008-ef713d7602e9-0">
+                            </use>
+                          </clipPath>
+                          <ellipse cx="367" cy="188" rx="3" ry="3" style="fill:none;fill-opacity:none;stroke-width:2;stroke:#001d72;stroke-opacity:1" id="stroke-shape-render-3874-5bc032d9-35f6-8017-8008-ef713d7602e9-0">
+                          </ellipse>
+                        </defs>
+                        <use href="#stroke-shape-render-3874-5bc032d9-35f6-8017-8008-ef713d7602e9-0" clip-path="url(&#x27;#inner-stroke-render-3874-5bc032d9-35f6-8017-8008-ef713d7602e9-0&#x27;)">
+                        </use>
+                      </g>
+                    </g>
+                  </g>
+                  <g id="shape-5bc032d9-35f6-8017-8008-ef6e33328075">
+                    <defs>
+                      <filter id="filter-render-3875" x="0" y="0" width="1" height="1" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix">
+                        </feFlood>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape">
+                        </feBlend>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                        </feColorMatrix>
+                        <feOffset dx="4" dy="4">
+                        </feOffset>
+                        <feGaussianBlur stdDeviation="2">
+                        </feGaussianBlur>
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+                        </feComposite>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.1843137254901961 0 0 0 0 0.3411764705882353 0 0 0 0 0.3058823529411765 0 0 0 0.2 0">
+                        </feColorMatrix>
+                        <feBlend mode="normal" in2="shape" result="filter_5bc032d9-35f6-8017-8008-ef6ddc38b45a">
+                        </feBlend>
+                      </filter>
+                      <filter id="filter-shadow-render-3875" x="0" y="0" width="1" height="1" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix">
+                        </feFlood>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape">
+                        </feBlend>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                        </feColorMatrix>
+                        <feOffset dx="4" dy="4">
+                        </feOffset>
+                        <feGaussianBlur stdDeviation="2">
+                        </feGaussianBlur>
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+                        </feComposite>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.1843137254901961 0 0 0 0 0.3411764705882353 0 0 0 0 0.3058823529411765 0 0 0 0.2 0">
+                        </feColorMatrix>
+                        <feBlend mode="normal" in2="shape" result="filter_5bc032d9-35f6-8017-8008-ef6ddc38b45a">
+                        </feBlend>
+                      </filter>
+                    </defs>
+                    <g class="fills" id="fills-5bc032d9-35f6-8017-8008-ef6e33328075">
+                      <ellipse cx="477.5" cy="361.5" rx="7.5" ry="7.5" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" filter="url(#filter-render-3875)" style="fill:#b1b2b5;fill-opacity:1">
+                      </ellipse>
+                    </g>
+                    <g id="strokes-5bc032d9-35f6-8017-8008-ef795ce11ec5-5bc032d9-35f6-8017-8008-ef6e33328075" class="strokes">
+                      <g class="inner-stroke-shape" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)">
+                        <defs>
+                          <clipPath id="inner-stroke-render-3875-5bc032d9-35f6-8017-8008-ef6e33328075-1">
+                            <use href="#stroke-shape-render-3875-5bc032d9-35f6-8017-8008-ef6e33328075-1">
+                            </use>
+                          </clipPath>
+                          <ellipse cx="477.5" cy="361.5" rx="7.5" ry="7.5" style="fill:none;fill-opacity:none;stroke-width:2;stroke:#001d72;stroke-opacity:1" id="stroke-shape-render-3875-5bc032d9-35f6-8017-8008-ef6e33328075-1">
+                          </ellipse>
+                        </defs>
+                        <use href="#stroke-shape-render-3875-5bc032d9-35f6-8017-8008-ef6e33328075-1" clip-path="url(&#x27;#inner-stroke-render-3875-5bc032d9-35f6-8017-8008-ef6e33328075-1&#x27;)">
+                        </use>
+                      </g>
+                      <g class="inner-stroke-shape" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)">
+                        <defs>
+                          <clipPath id="inner-stroke-render-3875-5bc032d9-35f6-8017-8008-ef6e33328075-0">
+                            <use href="#stroke-shape-render-3875-5bc032d9-35f6-8017-8008-ef6e33328075-0">
+                            </use>
+                          </clipPath>
+                          <ellipse cx="477.5" cy="361.5" rx="7.5" ry="7.5" style="fill:none;fill-opacity:none;stroke-width:2;stroke:#001d72;stroke-opacity:1" id="stroke-shape-render-3875-5bc032d9-35f6-8017-8008-ef6e33328075-0">
+                          </ellipse>
+                        </defs>
+                        <use href="#stroke-shape-render-3875-5bc032d9-35f6-8017-8008-ef6e33328075-0" clip-path="url(&#x27;#inner-stroke-render-3875-5bc032d9-35f6-8017-8008-ef6e33328075-0&#x27;)">
+                        </use>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
