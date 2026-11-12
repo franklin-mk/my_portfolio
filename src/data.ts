@@ -400,7 +400,7 @@ export const navItems: NavItem[] = [
   {
     label: "Blog",
     href: "#blog",
-    header: { label: "Return to Portfolio", href: "#home" },
+    /* header: { label: "Return to Portfolio", href: "#home" }, */
     children: [
       ...articles.map<NavChild>((a) => ({ label: a.title, href: "#blog", action: { kind: "article", id: a.id } })),
       { label: "View All Articles →", href: "#blog", action: { kind: "article", id: null } },

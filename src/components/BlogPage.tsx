@@ -120,9 +120,7 @@ export default function BlogPage({ articleId }: { articleId: string | null }) {
         ) : (
           <>
             <nav aria-label="Breadcrumb" className="mb-8 text-sm text-slate-400">
-              <a href="#/" className="inline-flex items-center gap-1.5 text-accent hover:underline">
-                <ArrowLeft size={14} /> Return to Portfolio
-              </a>
+
               <span className="mx-2" aria-hidden>
                 /
               </span>
