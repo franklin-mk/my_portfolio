@@ -84,19 +84,27 @@ export function SectionHeading({
   title,
   highlight,
   subtitle,
+  compact = false,
 }: {
   eyebrow: string;
   title: string;
   highlight: string;
   subtitle?: string;
+  compact?: boolean;
 }) {
   return (
-    <Reveal className="mx-auto mb-12 max-w-2xl text-center">
+    <Reveal className={`mx-auto max-w-2xl text-center ${compact ? "mb-5" : "mb-12"}`}>
       <Badge>{eyebrow}</Badge>
-      <h2 className="mt-4 font-display text-3xl font-bold leading-tight sm:text-4xl">
+      <h2
+        className={`font-display font-bold leading-tight ${
+          compact ? "mt-3 text-2xl sm:text-3xl" : "mt-4 text-3xl sm:text-4xl"
+        }`}
+      >
         {title} <span className="text-gradient">{highlight}</span>
       </h2>
-      {subtitle && <p className="mt-3 text-slate-400">{subtitle}</p>}
+      {subtitle && (
+        <p className={`text-slate-400 ${compact ? "mt-2 text-sm" : "mt-3"}`}>{subtitle}</p>
+      )}
     </Reveal>
   );
 }

@@ -1,7 +1,7 @@
 import { useState, type FormEvent } from "react";
 import { Mail, MapPin, MessageSquare, Phone } from "lucide-react";
 import { budgetOptions, EMAIL, packages, PHONE_DISPLAY, whatsappLink } from "../data";
-import { btnPrimary, glass, inputCls, Reveal, Section, SectionHeading } from "./ui";
+import { btnPrimary, glass, inputCls, Reveal, SectionHeading } from "./ui";
 
 const serviceOptions = [
   ...packages.map((p) => p.name),
@@ -9,6 +9,8 @@ const serviceOptions = [
   "Graphic Design & Branding",
   "Something else / not sure yet",
 ];
+
+const field = `${inputCls} !py-2.5`;
 
 export default function Contact() {
   const [form, setForm] = useState({
@@ -26,7 +28,7 @@ export default function Contact() {
   const submit = (e: FormEvent) => {
     e.preventDefault();
     const msg = [
-      "Hello Franklin, I found you via Frank.M.Tech and I'd like a quote.",
+      "Hello Franklin, I found you via your portfolio and I'd like a quote.",
       "",
       `Name: ${form.name}`,
       `Phone/WhatsApp: ${form.phone}`,
@@ -39,17 +41,18 @@ export default function Contact() {
   };
 
   return (
-    <Section id="contact">
+    <section id="contact" className="mx-auto max-w-7xl px-6 pt-24 pb-12 lg:pb-16">
       <SectionHeading
+        compact
         eyebrow="Get a Quote"
         title="Let's build something"
         highlight="that earns"
         subtitle="Fill in the form and it opens WhatsApp with your details pre-filled. You'll hear back from me directly."
       />
 
-      <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[1fr_1.3fr]">
-        <Reveal>
-          <div className="space-y-4">
+      <div className="mx-auto grid max-w-6xl gap-4 lg:grid-cols-[1fr_1.3fr] lg:gap-6">
+        <Reveal className="h-full">
+          <div className="flex h-full flex-col gap-3">
             {[
               { icon: Phone, label: "Call", value: PHONE_DISPLAY, href: "tel:+254716205591" },
               { icon: MessageSquare, label: "WhatsApp", value: PHONE_DISPLAY, href: whatsappLink() },
@@ -58,7 +61,7 @@ export default function Contact() {
             ].map(({ icon: Icon, label, value, href }) => {
               const inner = (
                 <>
-                  <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl border border-accent/30 bg-accent/10 text-accent">
+                  <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl border border-accent/30 bg-accent/10 text-accent">
                     <Icon size={18} />
                   </span>
                   <span className="min-w-0">
@@ -67,18 +70,19 @@ export default function Contact() {
                   </span>
                 </>
               );
+              const cls = `${glass} flex flex-1 items-center gap-4 rounded-2xl p-3.5`;
               return href ? (
                 <a
                   key={label}
                   href={href}
                   target={href.startsWith("http") ? "_blank" : undefined}
                   rel="noreferrer"
-                  className={`${glass} flex items-center gap-4 rounded-2xl p-4 transition hover:border-accent/50`}
+                  className={`${cls} transition hover:border-accent/50`}
                 >
                   {inner}
                 </a>
               ) : (
-                <div key={label} className={`${glass} flex items-center gap-4 rounded-2xl p-4`}>
+                <div key={label} className={cls}>
                   {inner}
                 </div>
               );
@@ -86,17 +90,17 @@ export default function Contact() {
           </div>
         </Reveal>
 
-        <Reveal delay={0.1}>
-          <form onSubmit={submit} className={`${glass} space-y-4 rounded-3xl p-6 sm:p-8`}>
-            <div className="grid gap-4 sm:grid-cols-2">
+        <Reveal delay={0.1} className="h-full">
+          <form onSubmit={submit} className={`${glass} flex h-full flex-col gap-3 rounded-2xl p-4 sm:p-6`}>
+            <div className="grid gap-3 sm:grid-cols-2">
               <div>
-                <label htmlFor="name" className="mb-1.5 block text-sm text-slate-300">
+                <label htmlFor="name" className="mb-1 block text-sm text-slate-300">
                   Name
                 </label>
-                <input id="name" required value={form.name} onChange={set("name")} placeholder="Jane Wanjiru" className={inputCls} />
+                <input id="name" required value={form.name} onChange={set("name")} placeholder="Jane Wanjiru" className={field} />
               </div>
               <div>
-                <label htmlFor="phone" className="mb-1.5 block text-sm text-slate-300">
+                <label htmlFor="phone" className="mb-1 block text-sm text-slate-300">
                   Phone / WhatsApp
                 </label>
                 <input
@@ -106,22 +110,22 @@ export default function Contact() {
                   value={form.phone}
                   onChange={set("phone")}
                   placeholder="07XX XXX XXX"
-                  className={inputCls}
+                  className={field}
                 />
               </div>
             </div>
             <div>
-              <label htmlFor="business" className="mb-1.5 block text-sm text-slate-300">
+              <label htmlFor="business" className="mb-1 block text-sm text-slate-300">
                 Business name
               </label>
-              <input id="business" value={form.business} onChange={set("business")} placeholder="Optional" className={inputCls} />
+              <input id="business" value={form.business} onChange={set("business")} placeholder="Optional" className={field} />
             </div>
-            <div className="grid gap-4 sm:grid-cols-2">
+            <div className="grid gap-3 sm:grid-cols-2">
               <div>
-                <label htmlFor="service" className="mb-1.5 block text-sm text-slate-300">
+                <label htmlFor="service" className="mb-1 block text-sm text-slate-300">
                   Service needed
                 </label>
-                <select id="service" value={form.service} onChange={set("service")} className={inputCls}>
+                <select id="service" value={form.service} onChange={set("service")} className={field}>
                   {serviceOptions.map((o) => (
                     <option key={o} className="bg-slate-900">
                       {o}
@@ -130,10 +134,10 @@ export default function Contact() {
                 </select>
               </div>
               <div>
-                <label htmlFor="budget" className="mb-1.5 block text-sm text-slate-300">
+                <label htmlFor="budget" className="mb-1 block text-sm text-slate-300">
                   Estimated budget
                 </label>
-                <select id="budget" value={form.budget} onChange={set("budget")} className={inputCls}>
+                <select id="budget" value={form.budget} onChange={set("budget")} className={field}>
                   {budgetOptions.map((o) => (
                     <option key={o} className="bg-slate-900">
                       {o}
@@ -142,7 +146,7 @@ export default function Contact() {
                 </select>
               </div>
             </div>
-            <button type="submit" className={`${btnPrimary} w-full`}>
+            <button type="submit" className={`${btnPrimary} mt-auto w-full !py-2.5`}>
               <MessageSquare size={16} /> Send on WhatsApp
             </button>
             {sent && (
@@ -153,6 +157,6 @@ export default function Contact() {
           </form>
         </Reveal>
       </div>
-    </Section>
+    </section>
   );
 }

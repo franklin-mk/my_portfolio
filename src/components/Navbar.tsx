@@ -51,11 +51,11 @@ export default function Navbar({ onCreative }: Props) {
       }`}
     >
       <nav className="mx-auto flex h-[72px] max-w-7xl items-center justify-between gap-4 px-6">
-        <a href="#home" onClick={go("#home")} className="flex shrink-0 items-center gap-3" aria-label="Frank.M.Tech home">
+        <a href="#home" onClick={go("#home")} className="flex shrink-0 items-center gap-3" aria-label="Franklin Muriithi home">
           <span className="grid h-10 w-10 place-items-center rounded-full border border-accent/50 bg-accent/10 font-display text-xs font-bold text-accent shadow-[0_0_20px_rgba(0,242,254,0.35)]">
             FM
           </span>
-          <span className="font-display text-lg font-semibold tracking-tight">Frank.M.Tech</span>
+          <span className="font-display text-lg font-semibold tracking-tight">Franklin Muriithi</span>
         </a>
 
         <ul className="hidden items-center gap-0 xl:flex">

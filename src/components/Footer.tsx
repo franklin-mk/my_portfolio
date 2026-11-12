@@ -148,11 +148,11 @@ export function Footer({
         {/* Divider + bottom bar */}
         <div className="mt-14 border-t border-slate-800/80 pt-6">
           <div className="flex flex-col items-center justify-between gap-2 text-xs text-slate-500 sm:flex-row">
-            <p>Frank.M.Tech | Web, AI &amp; Creative Media, Nyeri, Kenya</p>
+            <p>Franklin Muriithi | Web, AI &amp; Creative Media, Nyeri, Kenya</p>
             <p>Built &amp; maintained by Franklin Muriithi Kinyua</p>
           </div>
           <p className="mx-auto mt-8 max-w-2xl text-center text-xs leading-relaxed text-slate-500">
-            Frank.M.Tech: AI systems developer and creative media producer in Nyeri, Kenya. Offering web
+            Franklin Muriithi: AI systems developer and creative media producer in Nyeri, Kenya. Offering web
             development, M-Pesa integrations, video editing and brand design for SMEs and institutions across
             Kenya.
           </p>

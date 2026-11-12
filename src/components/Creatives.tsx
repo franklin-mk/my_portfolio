@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Camera, CheckCircle2, ExternalLink, Palette, Share2, Video, type LucideIcon } from "lucide-react";
 import { creatives, creativeTabs, type CreativeCategory, type CreativeItem, type CreativeTab } from "../data";
-import { ArrowButton, Counter, glass, glow, Modal, Section, SectionHeading, useArrowKeys } from "./ui";
+import { ArrowButton, Counter, glass, glow, Modal, SectionHeading, useArrowKeys } from "./ui";
 
 const catIcon: Record<CreativeCategory, LucideIcon> = {
   "Video Reels": Video,
@@ -33,7 +33,7 @@ function Media({ item }: { item: CreativeItem }) {
   return (
     <div className={`grid h-full w-full place-items-center bg-gradient-to-br ${catTint[item.category]}`}>
       <div className="px-4 text-center">
-        <Icon size={34} className="mx-auto text-accent/70" />
+        <Icon size={30} className="mx-auto text-accent/70" />
         <p className="mt-2 text-[11px] text-slate-500">Add public{item.image}</p>
       </div>
     </div>
@@ -66,7 +66,7 @@ export default function Creatives({
     const url = `${window.location.origin}${window.location.pathname}#creatives`;
     try {
       if (typeof navigator.share === "function") {
-        await navigator.share({ title: `${current.title} · Frank.M.Tech`, url });
+        await navigator.share({ title: `${current.title} · Franklin Muriithi`, url });
       } else {
         await navigator.clipboard.writeText(url);
         setCopied(true);
@@ -78,15 +78,16 @@ export default function Creatives({
   };
 
   return (
-    <Section id="creatives">
+    <section id="creatives" className="mx-auto max-w-7xl px-6 pt-24 pb-12 lg:pb-16">
       <SectionHeading
+        compact
         eyebrow="Creatives Showcase"
         title="Video, photography &"
         highlight="design"
-        subtitle="The creative side of Frank.M.Tech. Tap any piece to open the gallery."
+        subtitle="The creative side of Franklin Muriithi. Tap any piece to open the gallery."
       />
 
-      <div className="mb-10 flex flex-wrap justify-center gap-2" role="tablist" aria-label="Filter creatives">
+      <div className="mb-5 flex flex-wrap justify-center gap-2" role="tablist" aria-label="Filter creatives">
         {creativeTabs.map((t) => {
           const Icon = t === "All" ? null : catIcon[t];
           return (
@@ -95,7 +96,7 @@ export default function Creatives({
               role="tab"
               aria-selected={t === filter}
               onClick={() => onFilter(t)}
-              className={`relative inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm transition ${
+              className={`relative inline-flex items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-xs transition sm:text-sm ${
                 t === filter ? "border-accent/60 text-accent" : "border-slate-700 text-slate-300 hover:border-slate-500"
               }`}
             >
@@ -106,14 +107,14 @@ export default function Creatives({
                   transition={{ type: "spring", damping: 28, stiffness: 320 }}
                 />
               )}
-              {Icon && <Icon size={15} className="relative" />}
+              {Icon && <Icon size={14} className="relative" />}
               <span className="relative">{t}</span>
             </button>
           );
         })}
       </div>
 
-      <motion.div layout className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <motion.div layout className="grid grid-cols-2 gap-3 lg:grid-cols-3 xl:grid-cols-4">
         <AnimatePresence mode="popLayout">
           {visible.map((item, i) => {
             const Icon = catIcon[item.category];
@@ -126,18 +127,20 @@ export default function Creatives({
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.25 }}
                 onClick={() => setIndex(i)}
-                className={`${glass} ${glow} group overflow-hidden rounded-2xl text-left`}
+                className={`${glass} ${glow} group min-w-0 overflow-hidden rounded-xl text-left sm:rounded-2xl`}
               >
-                <div className="aspect-[4/3] overflow-hidden">
+                <div className="aspect-[4/3] overflow-hidden lg:aspect-[16/10]">
                   <div className="h-full w-full transition duration-500 group-hover:scale-105">
                     <Media item={item} />
                   </div>
                 </div>
-                <div className="p-4">
-                  <p className="inline-flex items-center gap-1.5 text-xs font-medium uppercase tracking-wider text-accent">
-                    <Icon size={13} /> {item.category}
+                <div className="p-2.5 sm:p-3">
+                  <p className="inline-flex items-center gap-1.5 text-[10px] font-medium uppercase tracking-wider text-accent sm:text-[11px]">
+                    <Icon size={12} /> {item.category}
                   </p>
-                  <h3 className="mt-1 font-display text-base font-semibold">{item.title}</h3>
+                  <h3 className="mt-0.5 break-words font-display text-sm font-semibold leading-tight">
+                    {item.title}
+                  </h3>
                 </div>
               </motion.button>
             );
@@ -148,7 +151,7 @@ export default function Creatives({
       <Modal open={current !== null} onClose={() => setIndex(null)} label="Creatives gallery" className="max-w-4xl">
         {current && index !== null && (
           <div>
-            <div className="relative aspect-[16/10] max-h-[68vh] w-full overflow-hidden rounded-2xl bg-slate-950">
+            <div className="relative aspect-[16/10] max-h-[56vh] w-full overflow-hidden rounded-2xl bg-slate-950">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={current.id}
@@ -162,18 +165,22 @@ export default function Creatives({
                 </motion.div>
               </AnimatePresence>
 
-              <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent px-5 pt-16 pb-5 sm:px-8 sm:pb-6">
-                <p className="text-xs font-medium uppercase tracking-wider text-accent">{current.category}</p>
-                <h3 className="mt-1 font-display text-xl font-semibold sm:text-2xl">{current.title}</h3>
-                <p className="mt-1 max-w-xl text-sm text-slate-300">{current.description}</p>
+              <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent px-4 pt-12 pb-3 sm:px-8 sm:pt-16 sm:pb-5">
+                <p className="text-[11px] font-medium uppercase tracking-wider text-accent sm:text-xs">
+                  {current.category}
+                </p>
+                <h3 className="mt-0.5 font-display text-base font-semibold sm:text-2xl">{current.title}</h3>
+                <p className="mt-1 line-clamp-2 max-w-xl text-xs text-slate-300 sm:text-sm">
+                  {current.description}
+                </p>
               </div>
 
-              <Counter index={index} total={total} className="absolute top-4 left-4" />
-              <ArrowButton dir="prev" onClick={prev} className="absolute top-1/2 left-3 -translate-y-1/2" />
-              <ArrowButton dir="next" onClick={next} className="absolute top-1/2 right-3 -translate-y-1/2" />
+              <Counter index={index} total={total} className="absolute top-3 left-3 sm:top-4 sm:left-4" />
+              <ArrowButton dir="prev" onClick={prev} className="absolute top-1/2 left-2 -translate-y-1/2 sm:left-3" />
+              <ArrowButton dir="next" onClick={next} className="absolute top-1/2 right-2 -translate-y-1/2 sm:right-3" />
             </div>
 
-            <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
+            <div className="mt-3 flex flex-wrap items-center justify-between gap-3">
               <div className="flex gap-1.5" aria-hidden>
                 {visible.map((v, i) => (
                   <span
@@ -188,14 +195,14 @@ export default function Creatives({
                     href={current.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex items-center gap-2 rounded-full border border-slate-700 px-4 py-2 text-sm text-slate-200 transition hover:border-accent/60 hover:text-accent"
+                    className="inline-flex items-center gap-2 rounded-full border border-slate-700 px-3.5 py-1.5 text-sm text-slate-200 transition hover:border-accent/60 hover:text-accent"
                   >
                     Watch Video <ExternalLink size={14} />
                   </a>
                 )}
                 <button
                   onClick={share}
-                  className="inline-flex items-center gap-2 rounded-full border border-slate-700 px-4 py-2 text-sm text-slate-200 transition hover:border-accent/60 hover:text-accent"
+                  className="inline-flex items-center gap-2 rounded-full border border-slate-700 px-3.5 py-1.5 text-sm text-slate-200 transition hover:border-accent/60 hover:text-accent"
                 >
                   {copied ? <CheckCircle2 size={14} className="text-emerald-400" /> : <Share2 size={14} />}
                   {copied ? "Link copied" : "Share"}
@@ -205,6 +212,6 @@ export default function Creatives({
           </div>
         )}
       </Modal>
-    </Section>
+    </section>
   );
 }

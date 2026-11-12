@@ -46,10 +46,10 @@ export default function BlogPage({ articleId }: { articleId: string | null }) {
 
   useEffect(() => {
     document.title = article
-      ? `${article.title} | Frank.M.Tech`
-      : "Blog | Frank.M.Tech";
+      ? `${article.title} | Franklin Muriithi`
+      : "Blog | Franklin Muriithi";
     return () => {
-      document.title = "Frank.M.Tech | Software & AI Solutions, Nyeri, Kenya";
+      document.title = "Franklin Muriithi | Software & AI Solutions, Nyeri, Kenya";
     };
   }, [article]);
 
@@ -58,11 +58,11 @@ export default function BlogPage({ articleId }: { articleId: string | null }) {
       {/* Slim header for the blog page */}
       <header className="sticky top-0 z-40 border-b border-slate-800/80 bg-ink/85 backdrop-blur-xl">
         <div className="mx-auto flex h-[68px] max-w-5xl items-center justify-between px-6">
-          <a href="#/" className="flex items-center gap-3" aria-label="Frank.M.Tech home">
+          <a href="#/" className="flex items-center gap-3" aria-label="Franklin Muriithi home">
             <span className="grid h-9 w-9 place-items-center rounded-full border border-accent/50 bg-accent/10 font-display text-xs font-bold text-accent">
               FM
             </span>
-            <span className="font-display text-lg font-semibold">Frank.M.Tech</span>
+            <span className="font-display text-lg font-semibold">Franklin Muriithi</span>
           </a>
           <a
             href="#/"
@@ -161,7 +161,7 @@ export default function BlogPage({ articleId }: { articleId: string | null }) {
       </main>
 
       <footer className="border-t border-slate-800/80 py-8 text-center text-xs text-slate-500">
-        © {new Date().getFullYear()} Frank.M.Tech · Franklin Muriithi Kinyua · Nyeri, Kenya
+        © {new Date().getFullYear()} Franklin Muriithi · Franklin Muriithi Kinyua · Nyeri, Kenya
       </footer>
     </div>
   );

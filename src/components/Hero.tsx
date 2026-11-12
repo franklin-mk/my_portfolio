@@ -14,11 +14,14 @@ export default function Hero({ onBook }: { onBook: () => void }) {
   const [imgOk, setImgOk] = useState(true);
 
   return (
-    <section id="home" className="relative overflow-hidden pt-32 pb-16 sm:pt-40">
+    <section
+      id="home"
+      className="relative overflow-hidden pt-28 pb-12 sm:pt-32 lg:flex lg:min-h-screen lg:items-center lg:pt-24 lg:pb-8"
+    >
       <div className="pointer-events-none absolute -top-24 left-1/2 h-96 w-[48rem] -translate-x-1/2 rounded-full bg-accent/10 blur-3xl" />
       <div className="pointer-events-none absolute top-40 right-0 h-72 w-72 rounded-full bg-indigo-500/10 blur-3xl" />
 
-      <div className="relative mx-auto grid max-w-7xl items-center gap-14 px-6 lg:grid-cols-[1.25fr_1fr]">
+      <div className="relative mx-auto grid w-full max-w-7xl items-center gap-10 px-6 lg:grid-cols-[1.25fr_1fr] lg:gap-14">
         <div>
           <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }}>
             <Badge>
@@ -28,7 +31,7 @@ export default function Hero({ onBook }: { onBook: () => void }) {
           </motion.div>
 
           <motion.h1
-            className="mt-6 font-display text-4xl font-bold leading-[1.1] sm:text-5xl lg:text-6xl"
+            className="mt-5 font-display text-4xl font-bold leading-[1.1] sm:text-5xl lg:mt-4 lg:text-[clamp(2rem,min(4.2vw,7.5vh),3.75rem)]"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.08 }}
@@ -38,7 +41,7 @@ export default function Hero({ onBook }: { onBook: () => void }) {
           </motion.h1>
 
           <motion.p
-            className="mt-6 max-w-xl text-base leading-relaxed text-slate-300 sm:text-lg"
+            className="mt-5 max-w-xl text-base leading-relaxed text-slate-300 sm:text-lg lg:mt-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.16 }}
@@ -48,7 +51,7 @@ export default function Hero({ onBook }: { onBook: () => void }) {
           </motion.p>
 
           <motion.div
-            className="mt-9 flex flex-wrap gap-3"
+            className="mt-7 flex flex-wrap gap-3 lg:mt-6"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.24 }}
@@ -62,7 +65,7 @@ export default function Hero({ onBook }: { onBook: () => void }) {
           </motion.div>
 
           <motion.ul
-            className="mt-10 flex flex-wrap gap-3"
+            className="mt-8 flex flex-wrap gap-3 lg:mt-6"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.32 }}
@@ -80,7 +83,7 @@ export default function Hero({ onBook }: { onBook: () => void }) {
         </div>
 
         <motion.div
-          className="relative mx-auto w-full max-w-sm"
+          className="relative mx-auto w-full max-w-sm lg:max-w-[min(24rem,46vh)]"
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2, duration: 0.6 }}
@@ -90,7 +93,7 @@ export default function Hero({ onBook }: { onBook: () => void }) {
               {imgOk ? (
                 <img
                   src={PROFILE_PIC}
-                  alt="Franklin Muriithi, founder of Frank.M.Tech"
+                  alt="Franklin Muriithi"
                   className="h-full w-full object-cover"
                   onError={() => setImgOk(false)}
                 />
@@ -102,7 +105,7 @@ export default function Hero({ onBook }: { onBook: () => void }) {
             </div>
             <div className="px-2 pt-3 pb-1">
               <p className="font-display font-semibold">Franklin M.</p>
-              <p className="text-xs text-slate-400">Developer &amp; creative · Frank.M.Tech</p>
+              <p className="text-xs text-slate-400">Developer &amp; creative · Franklin Muriithi</p>
             </div>
           </div>
 
