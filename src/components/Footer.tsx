@@ -66,7 +66,7 @@ export function Footer({
           {/* Brand */}
           <div>
             <p className="font-display text-2xl font-bold">
-              Frank<span className="text-cta">.M.Tech</span>
+              Franklin <span className="text-cta">Muriithi</span>
             </p>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-slate-400">
               AI Systems Developer &amp; Creative Media Producer based in Nyeri, Kenya.
