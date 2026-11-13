@@ -17,7 +17,7 @@ export default function About() {
           <div className={`${glass} mx-auto max-w-4xl rounded-2xl p-5 sm:p-7`}>
             <p className="text-base leading-relaxed text-slate-200">
               I'm Franklin Muriithi Kinyua, a third-year Computer Science student at Dedan Kimathi University of
-              Technology (DeKUT), expected to graduate in 2028, and the founder of Frank.M.Tech in Nyeri, Kenya.
+              Technology (DeKUT), expected to graduate in 2028, based in Nyeri, Kenya.
             </p>
             <p className="mt-3 text-sm leading-relaxed text-slate-300 sm:text-[15px]">
               My path started with a full-stack apprenticeship at DirectEd Development Foundation, where I built
